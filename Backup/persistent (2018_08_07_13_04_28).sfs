@@ -8,7 +8,7 @@ GAME
 	Mode = CAREER
 	Status = 1
 	Seed = 673788421
-	scene = 7
+	scene = 5
 	editor = None
 	flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
 	launchID = 15
@@ -192,7 +192,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 114032.66677856447
+		update = 113375.93861440904
 		version = 1.4.5
 		WEIGHTS
 		{
@@ -995,9 +995,8 @@ GAME
 					PARAM
 					{
 						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
+						state = Incomplete
+						values = 9750,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
 						kerbalName = Sonsby Kerman
@@ -1053,9 +1052,8 @@ GAME
 					PARAM
 					{
 						name = KerbalDestinationParameter
-						enabled = False
-						state = Complete
-						values = 0,0,0,0,0
+						state = Incomplete
+						values = 9750,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
 						kerbalName = Lodtrey Kerman
@@ -2312,7 +2310,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 1131719.2471669219
+		funds = 1111419.2471669219
 	}
 	SCENARIO
 	{
@@ -3440,12 +3438,12 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 129190.35109803615
+		NextSpawnTime = 113508.16154689361
 	}
 	FLIGHTSTATE
 	{
 		version = 1.4.5
-		UT = 114032.86677856451
+		UT = 113385.93503042584
 		activeVessel = 2
 		mapViewFiltering = -1026
 		commNetUIModeTracking = Network
@@ -4456,7 +4454,7 @@ GAME
 			persistentId = 4130596272
 			name = Viator 2
 			type = Ship
-			sit = ORBITING
+			sit = SUB_ORBITAL
 			landed = False
 			skipGroundPositioning = False
 			vesselSpawning = False
@@ -4464,36 +4462,36 @@ GAME
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 1035.0849073730205
+			met = 388.17315923435672
 			lct = 112997.76187119148
-			lastUT = 114032.86677856451
-			distanceTraveled = 1136502.1870661729
+			lastUT = 113385.93503042584
+			distanceTraveled = 245721.9481116315
 			root = 0
-			lat = -0.43297473603968273
-			lon = 75.688715648636034
-			alt = 80330.562468897668
+			lat = -1.5278483895122026
+			lon = -36.809316899785152
+			alt = 79299.646976145101
 			hgt = -1
-			nrm = 0.984804332,0.1421417,0.0997803807
-			rot = 0.470112443,0.461177945,0.478396624,-0.580900848
-			CoM = 7.15255737E-07,-4.69494629,3.57627869E-06
+			nrm = -0.999185324,0.0111831725,0.0387770832
+			rot = -0.251795262,-0.667581797,-0.670906484,0.202035397
+			CoM = 1.25467777E-05,-4.69834137,9.53674316E-07
 			stg = 3
 			prst = False
 			ref = 1608502622
 			ctrl = True
 			PQSMin = 2
 			PQSMax = 9
-			cPch = 0.2880002
-			cHdg = 0.06599921
+			cPch = 0.5120001
+			cHdg = -0.3459996
 			cMod = 0
 			ORBIT
 			{
-				SMA = 678431.80380535743
-				ECC = 0.0061822193093140718
-				INC = 2.155183441066014
-				LPE = 105.62953437802466
-				LAN = 282.2826396233238
-				MNA = -2.0349061714129779
-				EPH = 114032.86677856451
+				SMA = 672639.725798339
+				ECC = 0.014533025133921402
+				INC = 2.1550626169938081
+				LPE = 91.60604273806436
+				LAN = 282.25473553552001
+				MNA = 2.3096708289057237
+				EPH = 113385.93503042584
 				REF = 1
 			}
 			PART
@@ -4521,8 +4519,8 @@ GAME
 				attN = top, -1
 				mass = 0.800000012
 				shielded = False
-				temp = 310.98269386259699
-				tempExt = 309.82447912219436
+				temp = 316.33486734430068
+				tempExt = 312.81754888329152
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -4574,7 +4572,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Idle
+					stateString = Running
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -4752,7 +4750,6 @@ GAME
 						flight = 0
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
-						0 = Orbit,Kerbin
 					}
 					UPGRADESAPPLIED
 					{
@@ -4761,7 +4758,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 49.069352938342007
+					amount = 49.964110493396745
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -4806,8 +4803,8 @@ GAME
 				attN = bottom, 8
 				mass = 0.100000001
 				shielded = False
-				temp = 310.98433105641197
-				tempExt = 309.98319591241381
+				temp = 314.61627142062554
+				tempExt = 312.76281595182957
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -4853,8 +4850,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 310.93172834974138
-				tempExt = 309.76831444449527
+				temp = 316.32040423905704
+				tempExt = 313.29379559913752
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -4974,8 +4971,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 310.93177119205575
-				tempExt = 309.76832940354274
+				temp = 316.32040423905704
+				tempExt = 313.29379559913752
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5095,8 +5092,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 310.93177028491783
-				tempExt = 309.76832908680132
+				temp = 316.32040423905704
+				tempExt = 313.29379559913752
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5216,8 +5213,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.100000001
 				shielded = False
-				temp = 310.93172834974138
-				tempExt = 309.76831444449527
+				temp = 316.32040423905704
+				tempExt = 313.29379559913752
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5335,8 +5332,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.075000003
 				shielded = False
-				temp = 310.96730777758194
-				tempExt = 309.78780991495756
+				temp = 317.0345094844954
+				tempExt = 313.46101760634548
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5454,8 +5451,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.075000003
 				shielded = False
-				temp = 310.96730777760433
-				tempExt = 309.78780991496473
+				temp = 317.03450973776336
+				tempExt = 313.46101768553257
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5574,8 +5571,8 @@ GAME
 				attN = bottom, 9
 				mass = 2.5
 				shielded = False
-				temp = 311.09148479315814
-				tempExt = 310.05843926891748
+				temp = 314.24725033783972
+				tempExt = 312.24678471910858
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5695,7 +5692,6 @@ GAME
 						flight = 0
 						0 = Flight,Kerbin
 						0 = Suborbit,Kerbin
-						0 = Orbit,Kerbin
 					}
 					UPGRADESAPPLIED
 					{
@@ -5728,8 +5724,8 @@ GAME
 				attN = top, 8
 				mass = 0.5
 				shielded = False
-				temp = 311.22372864492417
-				tempExt = 310.23930089213752
+				temp = 313.80703147993006
+				tempExt = 312.23236052509174
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -5895,8 +5891,8 @@ GAME
 				attN = bottom, 11
 				mass = 0.159999996
 				shielded = False
-				temp = 311.35687591651481
-				tempExt = 310.52710453852376
+				temp = 313.3397173838523
+				tempExt = 312.04288818138542
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6005,8 +6001,8 @@ GAME
 				attN = bottom, 12
 				mass = 0.5
 				shielded = False
-				temp = 311.51104986878732
-				tempExt = 310.83893526890273
+				temp = 312.8521057923025
+				tempExt = 312.23231214366189
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6045,7 +6041,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 122.05283135647143
+					amount = 123.18908647442429
 					maxAmount = 360
 					flowState = True
 					isTweakable = True
@@ -6056,7 +6052,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 149.17566876147563
+					amount = 150.56442508364105
 					maxAmount = 440
 					flowState = True
 					isTweakable = True
@@ -6090,8 +6086,8 @@ GAME
 				attN = bottom, 13
 				mass = 1
 				shielded = False
-				temp = 311.62370604740073
-				tempExt = 311.07083493689601
+				temp = 313.15715412241383
+				tempExt = 313.11385306968447
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6130,7 +6126,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 244.10566271294286
+					amount = 246.37817294884857
 					maxAmount = 720
 					flowState = True
 					isTweakable = True
@@ -6141,7 +6137,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 298.35133752295127
+					amount = 301.12885016728211
 					maxAmount = 880
 					flowState = True
 					isTweakable = True
@@ -6175,8 +6171,8 @@ GAME
 				attN = bottom, -1
 				mass = 1.75
 				shielded = False
-				temp = 311.66106467952073
-				tempExt = 311.58318930874975
+				temp = 319.92107499968512
+				tempExt = 316.35948935884733
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 1
@@ -6301,7 +6297,7 @@ GAME
 				{
 					name = FXModuleAnimateThrottle
 					isEnabled = True
-					animState = 0
+					animState = 0.141828135
 					stagingEnabled = True
 					EVENTS
 					{
@@ -6385,8 +6381,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 311.03200563385695
-				tempExt = 309.9267474846373
+				temp = 314.46219181938233
+				tempExt = 311.84431877855502
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6543,8 +6539,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 311.03200498041963
-				tempExt = 309.92674737701054
+				temp = 314.46480169187225
+				tempExt = 311.84836919378023
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6701,8 +6697,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 311.03663172748298
-				tempExt = 309.99585488110381
+				temp = 314.4607296752207
+				tempExt = 311.80010458566858
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6859,8 +6855,8 @@ GAME
 				srfN = srfAttach, 8
 				mass = 0.0500000007
 				shielded = False
-				temp = 311.03363021413605
-				tempExt = 309.92701670027918
+				temp = 314.46072629889994
+				tempExt = 311.80010402974278
 				tempExtUnexp = 4
 				expt = 0.5
 				state = 0
@@ -6997,7 +6993,219 @@ GAME
 				Gear = False, 0
 				Light = False, 0
 				RCS = False, 0
-				SAS = False, 113594.846778475
+				SAS = True, 112993.421871191
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = -0.00827619992
+				yaw = 0.0493571088
+				roll = 0.000663197425
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+				CommNetVessel
+				{
+					controlState = KerbalFull
+					canComm = True
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = d736701257ec455c89b27a5ffebe3a0e
+			persistentId = 616205068
+			name = Viator 2 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = LaunchPad
+			displaylandedAt = #autoLOC_6002112
+			splashed = False
+			met = 47.00000000957516
+			lct = 112997.76187119148
+			lastUT = 113044.76187120106
+			distanceTraveled = 0
+			root = 0
+			lat = -0.097304989172155312
+			lon = -74.557598057025615
+			alt = 77.544599706307054
+			hgt = 7.78464317
+			nrm = 5.96046448E-08,1.00000012,-4.76837158E-07
+			rot = 0.70098871,0.0922178626,0.097265467,-0.700464368
+			CoM = 0,0,0
+			stg = 5
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300821.1493318181
+				ECC = 0.99479839078001886
+				INC = 0.097304989171561357
+				LPE = 90
+				LAN = 193.94355349885294
+				MNA = 3.1415926535897887
+				EPH = 113044.76187120106
+				REF = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				cid = 4294288378
+				uid = 3377270747
+				mid = 89364975
+				persistentId = 1170874315
+				launchID = 14
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 5
+				resPri = 0
+				dstg = 6
+				sqor = 5
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.100000001
+				shielded = False
+				temp = 306.18687825794223
+				tempExt = 306.49084302447955
+				tempExtUnexp = 306.49035795941927
+				expt = 0.100000001
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = launchClamp1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 3.25795031
+					height = 8.22047997
+					stagingEnabled = True
+					towerRot = -4.62803591E-08,8.42937027E-08,0,-1
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 112993.421871191
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -7037,10 +7245,626 @@ GAME
 				FlightIntegrator
 				{
 				}
-				CommNetVessel
+			}
+		}
+		VESSEL
+		{
+			pid = 0e94e53aa27b4eaa9f97445178c2f1dd
+			persistentId = 2001118754
+			name = Viator 2 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = LaunchPad
+			displaylandedAt = #autoLOC_6002112
+			splashed = False
+			met = 47.00000000957516
+			lct = 112997.76187119148
+			lastUT = 113044.76187120106
+			distanceTraveled = 0
+			root = 0
+			lat = -0.097110542522346535
+			lon = -74.557400878913938
+			alt = 77.546134311938658
+			hgt = 7.78464174
+			nrm = -8.47503543E-08,1.00000012,-6.70552254E-08
+			rot = 0.564451098,0.560510755,-0.426896691,-0.430095315
+			CoM = 0,0,0
+			stg = 5
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300821.15011617274
+				ECC = 0.99479839068021236
+				INC = 0.097110542524032048
+				LPE = 90.000000000000014
+				LAN = 193.94375067696458
+				MNA = 3.1415926535897887
+				EPH = 113044.76187120106
+				REF = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				cid = 4294288498
+				uid = 607630889
+				mid = 89364975
+				persistentId = 3087206331
+				launchID = 14
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,0.99999994
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 5
+				resPri = 0
+				dstg = 6
+				sqor = 5
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.100000001
+				shielded = False
+				temp = 306.18950607741931
+				tempExt = 306.49325786126286
+				tempExtUnexp = 306.49277313771216
+				expt = 0.100000001
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = launchClamp1
+				modCost = 0
+				EVENTS
 				{
-					controlState = KerbalFull
-					canComm = True
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 3.25795031
+					height = 8.22047997
+					stagingEnabled = True
+					towerRot = -3.27251541E-08,-0.70710665,-3.27251541E-08,-0.707106888
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 112993.421871191
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 02c0a33beeda4c21a7ab17e1e98f56ae
+			persistentId = 3423482118
+			name = Viator 2 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = LaunchPad
+			displaylandedAt = #autoLOC_6002112
+			splashed = False
+			met = 47.00000000957516
+			lct = 112997.76187119148
+			lastUT = 113044.76187120106
+			distanceTraveled = 0
+			root = 0
+			lat = -0.096913364836691079
+			lon = -74.5575953259318
+			alt = 77.544603594928049
+			hgt = 7.78463793
+			nrm = 5.96046448E-07,1.00000012,6.55651093E-07
+			rot = 0.0972655118,0.700464427,-0.700988591,0.0922181904
+			CoM = 0,0,0
+			stg = 5
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300821.14935195708
+				ECC = 0.99479839065939968
+				INC = 0.09691336483733437
+				LPE = 90.000000000000014
+				LAN = 193.94355622994672
+				MNA = 3.1415926535897887
+				EPH = 113044.76187120106
+				REF = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				cid = 4294288618
+				uid = 4020117837
+				mid = 89364975
+				persistentId = 2736218461
+				launchID = 14
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 5
+				resPri = 0
+				dstg = 6
+				sqor = 5
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.100000001
+				shielded = False
+				temp = 306.18690191654184
+				tempExt = 306.49087126803295
+				tempExtUnexp = 306.4903861956393
+				expt = 0.100000001
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = launchClamp1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 3.25794983
+					height = 8.22047997
+					stagingEnabled = True
+					towerRot = 0,-1,-4.62803591E-08,-8.42937027E-08
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 112993.421871191
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = c67058f4f88546fd85767bcc9240c721
+			persistentId = 1318181116
+			name = Viator 2 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = LaunchPad
+			displaylandedAt = #autoLOC_6002112
+			splashed = False
+			met = 47.00000000957516
+			lct = 112997.76187119148
+			lastUT = 113044.76187120106
+			distanceTraveled = 0
+			root = 0
+			lat = -0.097107811598988431
+			lon = -74.557792503966965
+			alt = 77.543070169282146
+			hgt = 7.78464174
+			nrm = 8.60542059E-07,1.00000012,-2.38418579E-07
+			rot = -0.426896691,0.430095196,-0.56445086,0.560511112
+			CoM = 0,0,0
+			stg = 5
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 9
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 300821.14856821694
+				ECC = 0.99479839075905385
+				INC = 0.097107811596326643
+				LPE = 90
+				LAN = 193.94335905191156
+				MNA = -3.1415926535897887
+				EPH = 113044.76187120106
+				REF = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				cid = 4294292500
+				uid = 2970976634
+				mid = 89364975
+				persistentId = 453628451
+				launchID = 14
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,0.99999994
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 5
+				resPri = 0
+				dstg = 6
+				sqor = 5
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.100000001
+				shielded = False
+				temp = 306.18951639208944
+				tempExt = 306.49327213209915
+				tempExtUnexp = 306.49278740215698
+				expt = 0.100000001
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = launchClamp1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 3.25795031
+					height = 8.22047997
+					stagingEnabled = True
+					towerRot = 3.27251541E-08,-0.707106829,-3.27251541E-08,0.707106709
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 112993.421871191
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
 				}
 			}
 		}
@@ -7328,7 +8152,6 @@ GAME
 				flight = 5
 				5 = Flight,Kerbin
 				5 = Suborbit,Kerbin
-				5 = Orbit,Kerbin
 			}
 		}
 		KERBAL
@@ -7423,7 +8246,6 @@ GAME
 				flight = 1
 				1 = Flight,Kerbin
 				1 = Suborbit,Kerbin
-				1 = Orbit,Kerbin
 			}
 		}
 		KERBAL
@@ -7692,7 +8514,6 @@ GAME
 				flight = 1
 				1 = Flight,Kerbin
 				1 = Suborbit,Kerbin
-				1 = Orbit,Kerbin
 			}
 		}
 		KERBAL
@@ -7724,7 +8545,6 @@ GAME
 				flight = 0
 				0 = Flight,Kerbin
 				0 = Suborbit,Kerbin
-				0 = Orbit,Kerbin
 			}
 		}
 		KERBAL
@@ -7756,7 +8576,6 @@ GAME
 				flight = 0
 				0 = Flight,Kerbin
 				0 = Suborbit,Kerbin
-				0 = Orbit,Kerbin
 			}
 		}
 		KERBAL
@@ -7937,22 +8756,6 @@ GAME
 	MESSAGESYSTEM
 	{
 		flash = True
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
-		MESSAGE
-		{
-			title = Contract Parameter Complete
-			message = <b>Ferry six tourists safely to their destination.</b>~n~n'Orbit around Kerbin' complete!~n~n<color=#B4D455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 9,750   </color>
-			color = 2
-			icon = 3
-			read = False
-		}
 		MESSAGE
 		{
 			title = Contract Parameter Complete
