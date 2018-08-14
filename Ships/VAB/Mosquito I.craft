@@ -2,7 +2,7 @@ ship = Mosquito I
 version = 1.4.5
 description = 
 type = VAB
-size = 3.00438285,3.25431824,2.91416645
+size = 3.00438285,3.25431824,2.91416526
 steamPublishedFileId = 0
 persistentId = 3170742602
 rot = 0,0,0,0
@@ -1477,7 +1477,7 @@ PART
 	part = solarPanels2_4294092620
 	partName = Part
 	persistentId = 1750215364
-	pos = -0.642571151,15.9214382,-5.96046448E-08
+	pos = -0.642571509,15.9214382,-5.96046448E-08
 	attPos = 0,0,0
 	attPos0 = -1.69957772E-08,-0.00356197357,0.642570794
 	rot = 2.13162821E-14,-1.1920929E-07,-2.07822552E-07,1.00000012
@@ -1516,7 +1516,7 @@ PART
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0, 0.707106829)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -1547,7 +1547,7 @@ PART
 	part = solarPanels2_4294091118
 	partName = Part
 	persistentId = 937258128
-	pos = 0.642571151,15.9214382,0
+	pos = 0.642571509,15.9214382,0
 	attPos = 0,0,0
 	attPos0 = -3.91795432E-08,-0.00356197357,-0.642570794
 	rot = -2.07822552E-07,1.00000012,0,0
@@ -1586,7 +1586,7 @@ PART
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0, 0.707106829)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -1802,6 +1802,7 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = batteryBankMini_4294078334
+	link = GooExperiment_4294015694
 	attN = top,batteryBankMini_4294078334_0|0.1|0
 	attN = bottom,ServiceBay.125_4294101928_0|-0.1|0
 	EVENTS
@@ -1870,5 +1871,92 @@ PART
 		hideFlow = False
 		isVisible = True
 		flowMode = Both
+	}
+}
+PART
+{
+	part = GooExperiment_4294015694
+	partName = Part
+	persistentId = 1933777301
+	pos = 1.49011523E-08,15.8044586,-0.218469456
+	attPos = 0,0,0
+	attPos0 = 1.49011683E-08,0.029458046,-0.218469337
+	rot = -3.27825546E-07,-3.27825546E-07,-0.707106948,0.707106948
+	attRot = 0,0,0.707106709,-0.707106709
+	attRot0 = -3.27825546E-07,-3.57627869E-07,-0.707106829,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,batteryBankMini_4294079504
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 }
