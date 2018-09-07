@@ -15,8 +15,8 @@ GAME
 	defaultVABLaunchSite = LaunchPad
 	defaultSPHLaunchSite = Runway
 	modded = False
-	envInfo =  - Environment Info - Win32NT 7FFFFFFFFFFFFFFF  Args: KSP_x64.exe  - 
-	versionFull = 1.4.5.2243 (WindowsPlayer x64)
+	envInfo =  - Environment Info - Unix 7FFFFFFFFFFFFFFF  Args: KSP.x86_64  - 
+	versionFull = 1.4.5.2243 (LinuxPlayer)
 	versionCreated = 1.4.5.2243 (WindowsPlayer x64)
 	PARAMETERS
 	{
@@ -186,13 +186,23 @@ GAME
 		{
 			GameSeed = 728894919
 			MaxDeltaTime = 21600
+			BIOME_LOCK_DATA
+			{
+				PlanetId = 13
+				BiomeName = Midlands
+			}
+			BIOME_LOCK_DATA
+			{
+				PlanetId = 13
+				BiomeName = Lowlands
+			}
 		}
 	}
 	SCENARIO
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 45873778.014928475
+		update = 45877629.2883498
 		version = 1.4.5
 		WEIGHTS
 		{
@@ -5045,7 +5055,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 3548047.5784319569
+		funds = 3656047.5784319569
 	}
 	SCENARIO
 	{
@@ -5739,6 +5749,19 @@ GAME
 						crews = Valentina Kerman
 					}
 				}
+				Landing
+				{
+					completed = 45873906.134949476
+					vessel
+					{
+						name = Aquila 2 Lander
+						flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+					}
+					crew
+					{
+						crews = Valentina Kerman
+					}
+				}
 				Spacewalk
 				{
 					completed = 45868639.032850683
@@ -5747,9 +5770,21 @@ GAME
 						crews = Valentina Kerman
 					}
 				}
+				SurfaceEVA
+				{
+					completed = 45874003.794965483
+					crew
+					{
+						crews = Valentina Kerman
+					}
+				}
+				FlagPlant
+				{
+					completed = 45874137.794987448
+				}
 				Suborbit
 				{
-					completedManned = 45872144.31323652
+					completed = 45872144.31323652
 					vessel
 					{
 						name = Aquila 2 Lander
@@ -5771,7 +5806,7 @@ GAME
 	{
 		name = ResearchAndDevelopment
 		scene = 7, 8, 5, 6
-		sci = 328.381226
+		sci = 332.381226
 		Tech
 		{
 			id = start
@@ -9333,6 +9368,296 @@ GAME
 			sci = 0
 			cap = 132
 		}
+		Science
+		{
+			id = gravityScan@GillyInSpaceLowMidlands
+			title = Gravity Scan from space just above Gilly's Midlands
+			dsc = 3
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 176
+		}
+		Science
+		{
+			id = temperatureScan@GillyInSpaceLow
+			title = Temperature Scan while in space near Gilly
+			dsc = 1
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 64
+		}
+		Science
+		{
+			id = barometerScan@GillyInSpaceLow
+			title = Atmospheric Pressure Scan while in space near Gilly
+			dsc = 1
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 96
+		}
+		Science
+		{
+			id = mysteryGoo@GillyInSpaceLow
+			title = Mystery Goo™ Observation while in space near Gilly
+			dsc = 1
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 104
+		}
+		Science
+		{
+			id = crewReport@GillyInSpaceLow
+			title = Crew Report while in space near Gilly
+			dsc = 1
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 40
+		}
+		Science
+		{
+			id = evaReport@GillyInSpaceLowMidlands
+			title = EVA Report from space just above Gilly's Midlands
+			dsc = 1
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 64
+		}
+		Science
+		{
+			id = gravityScan@GillySrfLandedMidlands
+			title = Gravity Scan from Gilly's Midlands
+			dsc = 3
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 198
+		}
+		Science
+		{
+			id = temperatureScan@GillySrfLandedMidlands
+			title = Temperature Scan from Gilly's Midlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 72
+		}
+		Science
+		{
+			id = barometerScan@GillySrfLandedMidlands
+			title = Atmospheric Pressure Scan from Gilly's Midlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 108
+		}
+		Science
+		{
+			id = seismicScan@GillySrfLandedMidlands
+			title = Seismic Scan from Gilly's Midlands
+			dsc = 2.5
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 198
+		}
+		Science
+		{
+			id = mysteryGoo@GillySrfLandedMidlands
+			title = Mystery Goo™ Observation from Gilly's Midlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 117
+		}
+		Science
+		{
+			id = crewReport@GillySrfLandedMidlands
+			title = Crew Report from Gilly's Midlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 45
+		}
+		Science
+		{
+			id = evaReport@GillySrfLandedMidlands
+			title = EVA Report from Gilly's Midlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 72
+		}
+		Science
+		{
+			id = surfaceSample@GillySrfLandedMidlands
+			title = Surface Sample from Gilly's Midlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 360
+		}
+		Science
+		{
+			id = gravityScan@GillyInSpaceLowHighlands
+			title = Gravity Scan from space just above Gilly's Highlands
+			dsc = 3
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 176
+		}
+		Science
+		{
+			id = evaReport@GillyInSpaceLowHighlands
+			title = EVA Report from space just above Gilly's Highlands
+			dsc = 1
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 64
+		}
+		Science
+		{
+			id = gravityScan@GillySrfLandedHighlands
+			title = Gravity Scan from Gilly's Highlands
+			dsc = 3
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 198
+		}
+		Science
+		{
+			id = temperatureScan@GillySrfLandedHighlands
+			title = Temperature Scan from Gilly's Highlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 72
+		}
+		Science
+		{
+			id = barometerScan@GillySrfLandedHighlands
+			title = Atmospheric Pressure Scan from Gilly's Highlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 108
+		}
+		Science
+		{
+			id = seismicScan@GillySrfLandedHighlands
+			title = Seismic Scan from Gilly's Highlands
+			dsc = 2.5
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 198
+		}
+		Science
+		{
+			id = crewReport@GillySrfLandedHighlands
+			title = Crew Report from Gilly's Highlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 45
+		}
+		Science
+		{
+			id = evaReport@GillySrfLandedHighlands
+			title = EVA Report from Gilly's Highlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 72
+		}
+		Science
+		{
+			id = surfaceSample@GillySrfLandedHighlands
+			title = Surface Sample from Gilly's Highlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 360
+		}
+		Science
+		{
+			id = gravityScan@GillyInSpaceLowLowlands
+			title = Gravity Scan from space just above Gilly's Lowlands
+			dsc = 3
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 176
+		}
+		Science
+		{
+			id = evaReport@GillyInSpaceLowLowlands
+			title = EVA Report from space just above Gilly's Lowlands
+			dsc = 1
+			scv = 1
+			sbv = 8
+			sci = 0
+			cap = 64
+		}
+		Science
+		{
+			id = gravityScan@GillySrfLandedLowlands
+			title = Gravity Scan from Gilly's Lowlands
+			dsc = 3
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 198
+		}
+		Science
+		{
+			id = barometerScan@GillySrfLandedLowlands
+			title = Atmospheric Pressure Scan from Gilly's Lowlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 108
+		}
+		Science
+		{
+			id = seismicScan@GillySrfLandedLowlands
+			title = Seismic Scan from Gilly's Lowlands
+			dsc = 2.5
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 198
+		}
+		Science
+		{
+			id = surfaceSample@GillySrfLandedLowlands
+			title = Surface Sample from Gilly's Lowlands
+			dsc = 1
+			scv = 1
+			sbv = 9
+			sci = 0
+			cap = 360
+		}
 	}
 	SCENARIO
 	{
@@ -9343,7 +9668,7 @@ GAME
 	{
 		name = Reputation
 		scene = 7, 8, 5, 6
-		rep = 724.779602
+		rep = 726.73407
 	}
 	SCENARIO
 	{
@@ -9679,9 +10004,9 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.4.5
-		UT = 45873784.494929537
-		activeVessel = 0
-		mapViewFiltering = 15358
+		UT = 45877632.148350269
+		activeVessel = 42
+		mapViewFiltering = 16382
 		commNetUIModeTracking = Network
 		commNetUIModeFlight = Path
 		VESSEL
@@ -11471,13 +11796,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 23472639.560578831
-				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
+				SMA = NaN
+				ECC = 1
+				INC = 33.139536126823231
 				LPE = 270
-				LAN = 107.86547434064539
-				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 302.37119351618981
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -11643,13 +11968,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 23472639.560578831
+				SMA = 30000.164244019023
 				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
-				LPE = 270
-				LAN = 107.86547434064539
+				INC = 7.1629107601901447
+				LPE = 90.000000000000014
+				LAN = 311.11469866966183
 				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -11815,13 +12140,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 23472639.560578831
-				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
+				SMA = NaN
+				ECC = 1
+				INC = 15.252687939519788
 				LPE = 270
-				LAN = 107.86547434064539
-				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 280.13758656285574
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -13395,13 +13720,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 6297427.3785663517
+				SMA = 101996.95422513227
 				ECC = 0.99999999999999989
-				INC = 0.0045717176819721397
+				INC = 14.86361510811397
 				LPE = 90
-				LAN = 210.17265418150799
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 109.93186555780795
+				MNA = 3.1415926207170166
+				EPH = 45875338.039298818
 				REF = 2
 			}
 			PART
@@ -13567,13 +13892,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 6297427.3785663517
-				ECC = 0.99999999999999989
-				INC = 0.0045717176819721397
-				LPE = 90
-				LAN = 210.17265418150799
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				SMA = NaN
+				ECC = 1
+				INC = 75.873950869164901
+				LPE = 270
+				LAN = 89.899425621753323
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 2
 			}
 			PART
@@ -13739,13 +14064,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 6297427.3785663517
+				SMA = 100640.41666681382
 				ECC = 0.99999999999999989
-				INC = 0.0045717176819721397
-				LPE = 90
-				LAN = 210.17265418150799
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				INC = 6.5528164443386325
+				LPE = 270
+				LAN = 327.59623137802441
+				MNA = 3.1415926207170166
+				EPH = 45875338.039298818
 				REF = 2
 			}
 			PART
@@ -13911,13 +14236,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 6297427.3785663517
-				ECC = 0.99999999999999989
-				INC = 0.0045717176819721397
-				LPE = 90
-				LAN = 210.17265418150799
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				SMA = NaN
+				ECC = 1
+				INC = 20.381392075097807
+				LPE = 90.000000000000014
+				LAN = 299.80386335261755
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 2
 			}
 			PART
@@ -14083,13 +14408,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 6297427.3785663517
-				ECC = 0.99999999999999989
-				INC = 0.0045717176819721397
+				SMA = NaN
+				ECC = 1
+				INC = 8.7018021342730485
 				LPE = 90
-				LAN = 210.17265418150799
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 250.05205129997142
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 2
 			}
 			PART
@@ -14255,13 +14580,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 6297427.3785663517
+				SMA = 100703.81826801003
 				ECC = 0.99999999999999989
-				INC = 0.0045717176819721397
-				LPE = 90
-				LAN = 210.17265418150799
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				INC = 45.026387408967516
+				LPE = 270
+				LAN = 228.51239319932526
+				MNA = 3.1415926207170166
+				EPH = 45875338.039298818
 				REF = 2
 			}
 			PART
@@ -14427,13 +14752,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 6297427.3785663517
-				ECC = 0.99999999999999989
-				INC = 0.0045717176819721397
-				LPE = 90
-				LAN = 210.17265418150799
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				SMA = NaN
+				ECC = 1
+				INC = 7.9632979298967133
+				LPE = 270
+				LAN = 193.18572645005003
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 2
 			}
 			PART
@@ -14599,13 +14924,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 6297427.3785663517
-				ECC = 0.99999999999999989
-				INC = 0.0045717176819721397
+				SMA = NaN
+				ECC = 1
+				INC = 37.738916480547417
 				LPE = 90
-				LAN = 210.17265418150799
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 172.16397681047169
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 2
 			}
 			PART
@@ -21535,13 +21860,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 23472639.560578831
+				SMA = 31723.902820650543
 				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
+				INC = 25.241418606296847
 				LPE = 270
-				LAN = 107.86547434064539
+				LAN = 212.69790167007636
 				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -21707,13 +22032,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 23472639.560578831
-				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
+				SMA = NaN
+				ECC = 1
+				INC = 9.4489634905918081
 				LPE = 270
-				LAN = 107.86547434064539
-				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 149.39865545980183
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -21879,13 +22204,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 23472639.560578831
-				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
+				SMA = NaN
+				ECC = 1
+				INC = 80.605673188554277
 				LPE = 270
-				LAN = 107.86547434064539
-				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 168.43484037946985
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -22051,13 +22376,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 23472639.560578831
+				SMA = 32555.821791173177
 				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
-				LPE = 270
-				LAN = 107.86547434064539
+				INC = 71.105698187967249
+				LPE = 90
+				LAN = 38.375716699589532
 				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -22223,13 +22548,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 23472639.560578831
+				SMA = 30000.169979008169
 				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
-				LPE = 270
-				LAN = 107.86547434064539
-				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				INC = 3.4448042703593074
+				LPE = 90
+				LAN = 235.97115174409649
+				MNA = -3.1415926207170166
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -22395,13 +22720,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 23472639.560578831
+				SMA = 31457.10580197311
 				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
+				INC = 2.4260502468594711
 				LPE = 270
-				LAN = 107.86547434064539
+				LAN = 240.40403702263939
 				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -26311,13 +26636,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 300071.78031296714
-				ECC = 0.99999999999999989
-				INC = 0.095943957626883958
+				SMA = 0
+				ECC = 1
+				INC = 10.281539418757076
 				LPE = 90
-				LAN = 202.74406069601844
-				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 207.03739828061896
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 1
 			}
 			PART
@@ -27447,13 +27772,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 23472639.560578831
-				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
+				SMA = 0
+				ECC = 1
+				INC = 1.8970841384022592
 				LPE = 270
-				LAN = 107.86547434064539
-				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 323.95799497041122
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -29033,13 +29358,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 4329918964.7904873
-				ECC = 0.99999999999999989
-				INC = 0.11901989818116782
+				SMA = NaN
+				ECC = 1
+				INC = 38.833719970223768
 				LPE = 90
-				LAN = 316.12003483376026
-				MNA = -3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 245.90056729047251
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 6
 			}
 			PART
@@ -33560,13 +33885,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 23472639.560578831
-				ECC = 0.99999999999999989
-				INC = 5.2503674850351496
+				SMA = NaN
+				ECC = 1
+				INC = 0.38526182721912156
 				LPE = 270
-				LAN = 107.86547434064539
-				MNA = 3.1415926207170166
-				EPH = 45873777.994928472
+				LAN = 232.58362461324978
+				MNA = 0
+				EPH = 45875338.039298818
 				REF = 3
 			}
 			PART
@@ -43813,44 +44138,44 @@ GAME
 			persistentId = 2056696791
 			name = Aquila 2 Lander
 			type = Lander
-			sit = SUB_ORBITAL
+			sit = ORBITING
 			landed = False
-			skipGroundPositioning = False
+			skipGroundPositioning = True
 			vesselSpawning = False
 			launchedFrom = LaunchPad
 			landedAt = 
 			displaylandedAt = 
 			splashed = False
-			met = 311893.34107584506
+			met = 315747.49449764192
 			lct = 45561884.653852627
-			lastUT = 45873777.994928472
-			distanceTraveled = 138089.24196496472
+			lastUT = 45877632.148350269
+			distanceTraveled = 166227.38444758538
 			root = 0
-			lat = 4.8303417076576851
-			lon = 161.43071438830336
-			alt = 5287.8491230048239
-			hgt = 1138.22144
-			nrm = 0.181616664,0.746475816,-0.640147865
-			rot = -0.625438392,0.386395395,-0.454602122,-0.502854288
-			CoM = -5.9604497E-07,-1.43711972,-0.00772592798
+			lat = 14.879135505276254
+			lon = -167.45178397146552
+			alt = 6572.239560400536
+			hgt = 6572.23975
+			nrm = -0.00528241694,0.316352606,-0.948626995
+			rot = -0.46162191,0.584759891,-0.539108813,0.392839551
+			CoM = -1.38580799E-06,-1.45179784,-0.00806468725
 			stg = 1
 			prst = False
 			ref = 2371018011
 			ctrl = True
 			PQSMin = 2
-			PQSMax = 9
-			cPch = 0.542
-			cHdg = -1.641508
+			PQSMax = 6
+			cPch = 0.2679988
+			cHdg = 11.91199
 			cMod = 0
 			ORBIT
 			{
-				SMA = 11129.217755509395
-				ECC = 0.97676534043045082
-				INC = 97.419810313155267
-				LPE = 179.23865995160486
-				LAN = 9.8104577497508103
-				MNA = -1.5543127917214743
-				EPH = 45873777.994928472
+				SMA = 21463.4337050537
+				ECC = 0.14881610432344747
+				INC = 17.384254427581453
+				LPE = 59.840053903412361
+				LAN = 327.4653020581469
+				MNA = 0.81706093768117971
+				EPH = 45877632.148350269
 				REF = 13
 			}
 			PART
@@ -43863,7 +44188,7 @@ GAME
 				launchID = 31
 				parent = 0
 				position = 0,0,0
-				rotation = 0,0,0,1.00000012
+				rotation = 0,0,0,1
 				mirror = 1,1,1
 				symMethod = Radial
 				istg = -1
@@ -43878,8 +44203,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.49970850254954
-				tempExt = 207.00105973117317
+				temp = 218.59171673161413
+				tempExt = 218.39765817317871
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -43887,7 +44212,7 @@ GAME
 				autostrutMode = Off
 				rigidAttachment = False
 				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
-				rTrf = dockingPort2
+				rTrf = dockingPort2 (Aquila 2 Lander)
 				modCost = 0
 				EVENTS
 				{
@@ -43969,8 +44294,8 @@ GAME
 				attN = bottom, 14
 				mass = 0.100000001
 				shielded = False
-				temp = 206.27365402388693
-				tempExt = 207.46195133542432
+				temp = 218.62178177204817
+				tempExt = 217.66723263088781
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44084,8 +44409,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.0250000004
 				shielded = False
-				temp = 208.22956444964117
-				tempExt = 212.5751896965449
+				temp = 219.05702433908752
+				tempExt = 219.91527740900875
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44110,7 +44435,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 41361636.070823342
-					currentRotation = (0.703370988, 0.0724299029, -0.0721857324, -0.703429103)
+					currentRotation = (0.418375075, 0.570444107, -0.569718957, -0.418301463)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -44162,8 +44487,8 @@ GAME
 				srfN = srfAttach, 1
 				mass = 0.0250000004
 				shielded = False
-				temp = 207.13353387910598
-				tempExt = 209.67279461946879
+				temp = 219.2871465334276
+				tempExt = 220.64047086660241
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44188,7 +44513,7 @@ GAME
 					isEnabled = True
 					efficiencyMult = 1
 					launchUT = 41361636.070823342
-					currentRotation = (0.702996612, -0.0723075569, 0.0724636316, -0.703787208)
+					currentRotation = (0.417951077, -0.570311308, 0.56960392, -0.419062406)
 					storedAnimationTime = 0
 					storedAnimationSpeed = 0
 					deployState = EXTENDED
@@ -44241,8 +44566,8 @@ GAME
 				attN = bottom, 1
 				mass = 0.0199999996
 				shielded = False
-				temp = 206.09091171214527
-				tempExt = 206.52278909122361
+				temp = 214.17389799727798
+				tempExt = 214.34180460630677
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44264,7 +44589,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 15.633943691486101
+					amount = 3.5973034960595704
 					maxAmount = 20
 					flowState = True
 					isTweakable = True
@@ -44296,8 +44621,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.21420036725877
-				tempExt = 206.3301779121557
+				temp = 214.17201729473894
+				tempExt = 214.19406229714929
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44319,7 +44644,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.99970909059752
+					amount = 99.999709069995831
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -44351,8 +44676,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.21420036725877
-				tempExt = 206.3301779121557
+				temp = 214.17201729473894
+				tempExt = 214.19406229714929
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44374,7 +44699,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.99970909059752
+					amount = 99.999709069995831
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -44406,8 +44731,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.21420036725877
-				tempExt = 206.3301779121557
+				temp = 214.17201729473894
+				tempExt = 214.19406229714929
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44429,7 +44754,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.99970909059752
+					amount = 99.999709069995831
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -44461,8 +44786,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.21420036725877
-				tempExt = 206.3301779121557
+				temp = 214.17201729473894
+				tempExt = 214.19406229714929
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44484,7 +44809,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.99970909059752
+					amount = 99.999709069995831
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -44516,8 +44841,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.21420036725877
-				tempExt = 206.3301779121557
+				temp = 214.17201729473894
+				tempExt = 214.19406229714929
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44539,7 +44864,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 99.99970909059752
+					amount = 99.999709069995831
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -44571,8 +44896,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.07691414524808
-				tempExt = 206.25336783390387
+				temp = 214.14922062776802
+				tempExt = 214.16984928876695
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44667,8 +44992,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.07724933222246
-				tempExt = 206.25142269830746
+				temp = 214.14922066118095
+				tempExt = 214.16985041947541
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44692,9 +45017,9 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					aniState = LOCKED
-					animSwitch = True
-					animTime = 0
-					animSpeed = 1
+					animSwitch = False
+					animTime = 1
+					animSpeed = 0
 					deployPercent = 100
 					animationIsDisabled = False
 					stagingEnabled = True
@@ -44716,8 +45041,8 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = False
-					Inoperable = False
+					Deployed = True
+					Inoperable = True
 					cooldownToGo = 0
 					stagingEnabled = True
 					EVENTS
@@ -44732,6 +45057,7 @@ GAME
 						ResetAction
 						{
 							actionGroup = None
+							active = False
 						}
 					}
 					UPGRADESAPPLIED
@@ -44762,8 +45088,8 @@ GAME
 				srfN = srfAttach, 4
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.07724933222246
-				tempExt = 206.25142269830746
+				temp = 214.14922028450744
+				tempExt = 214.16983768320625
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44787,9 +45113,9 @@ GAME
 					name = ModuleAnimateGeneric
 					isEnabled = True
 					aniState = LOCKED
-					animSwitch = True
-					animTime = 0
-					animSpeed = 1
+					animSwitch = False
+					animTime = 0.990905106
+					animSpeed = 0
 					deployPercent = 100
 					animationIsDisabled = False
 					stagingEnabled = True
@@ -44811,8 +45137,8 @@ GAME
 				{
 					name = ModuleScienceExperiment
 					isEnabled = True
-					Deployed = False
-					Inoperable = False
+					Deployed = True
+					Inoperable = True
 					cooldownToGo = 0
 					stagingEnabled = True
 					EVENTS
@@ -44827,6 +45153,7 @@ GAME
 						ResetAction
 						{
 							actionGroup = None
+							active = False
 						}
 					}
 					UPGRADESAPPLIED
@@ -44859,8 +45186,8 @@ GAME
 				attN = top, 1
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.48864854930397
-				tempExt = 207.08438381657234
+				temp = 218.2291336468235
+				tempExt = 218.00546943028198
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -44940,8 +45267,8 @@ GAME
 				attN = top, 1
 				mass = 0.600000024
 				shielded = False
-				temp = 206.10063408034497
-				tempExt = 206.25865401311148
+				temp = 208.77215338405986
+				tempExt = 209.09548426637394
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -45085,6 +45412,106 @@ GAME
 					}
 					ScienceData
 					{
+						data = 8
+						subjectID = evaReport@GillyInSpaceLowLowlands
+						xmit = 1
+						xmitBonus = 1
+						title = EVA Report from space just above Gilly's Lowlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = temperatureScan@GillyInSpaceLow
+						xmit = 0.5
+						xmitBonus = 1
+						title = Temperature Scan while in space near Gilly
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 5
+						subjectID = crewReport@GillyInSpaceLow
+						xmit = 1
+						xmitBonus = 1
+						title = Crew Report while in space near Gilly
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 60
+						subjectID = gravityScan@GillyInSpaceLowLowlands
+						xmit = 0.400000006
+						xmitBonus = 1
+						title = Gravity Scan from space just above Gilly's Lowlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 12
+						subjectID = barometerScan@GillyInSpaceLow
+						xmit = 0.5
+						xmitBonus = 1
+						title = Atmospheric Pressure Scan while in space near Gilly
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 5
+						subjectID = crewReport@GillySrfLandedHighlands
+						xmit = 1
+						xmitBonus = 1
+						title = Crew Report from Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = evaReport@GillySrfLandedHighlands
+						xmit = 1
+						xmitBonus = 1
+						title = EVA Report from Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = evaReport@GillyInSpaceLowHighlands
+						xmit = 1
+						xmitBonus = 1
+						title = EVA Report from space just above Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 60
+						subjectID = gravityScan@GillyInSpaceLowHighlands
+						xmit = 0.400000006
+						xmitBonus = 1
+						title = Gravity Scan from space just above Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 5
+						subjectID = crewReport@GillySrfLandedMidlands
+						xmit = 1
+						xmitBonus = 1
+						title = Crew Report from Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
 						data = 5
 						subjectID = crewReport@GillyInSpaceHigh
 						xmit = 1
@@ -45173,6 +45600,196 @@ GAME
 						triggered = False
 						container = 2371018011
 					}
+					ScienceData
+					{
+						data = 8
+						subjectID = evaReport@GillyInSpaceLowMidlands
+						xmit = 1
+						xmitBonus = 1
+						title = EVA Report from space just above Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 60
+						subjectID = gravityScan@GillyInSpaceLowMidlands
+						xmit = 0.400000006
+						xmitBonus = 1
+						title = Gravity Scan from space just above Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 10
+						subjectID = mysteryGoo@GillyInSpaceLow
+						xmit = 0.300000012
+						xmitBonus = 1
+						title = Mystery Goo™ Observation while in space near Gilly
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 30
+						subjectID = surfaceSample@GillySrfLandedMidlands
+						xmit = 0.25
+						xmitBonus = 1
+						title = Surface Sample from Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = evaReport@GillySrfLandedMidlands
+						xmit = 1
+						xmitBonus = 1
+						title = EVA Report from Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 60
+						subjectID = gravityScan@GillySrfLandedMidlands
+						xmit = 0.400000006
+						xmitBonus = 1
+						title = Gravity Scan from Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = temperatureScan@GillySrfLandedMidlands
+						xmit = 0.5
+						xmitBonus = 1
+						title = Temperature Scan from Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 12
+						subjectID = barometerScan@GillySrfLandedMidlands
+						xmit = 0.5
+						xmitBonus = 1
+						title = Atmospheric Pressure Scan from Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 50
+						subjectID = seismicScan@GillySrfLandedMidlands
+						xmit = 0.449999988
+						xmitBonus = 1
+						title = Seismic Scan from Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 10
+						subjectID = mysteryGoo@GillySrfLandedMidlands
+						xmit = 0.300000012
+						xmitBonus = 1
+						title = Mystery Goo™ Observation from Gilly's Midlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 8
+						subjectID = temperatureScan@GillySrfLandedHighlands
+						xmit = 0.5
+						xmitBonus = 1
+						title = Temperature Scan from Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 60
+						subjectID = gravityScan@GillySrfLandedHighlands
+						xmit = 0.400000006
+						xmitBonus = 1
+						title = Gravity Scan from Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 12
+						subjectID = barometerScan@GillySrfLandedHighlands
+						xmit = 0.5
+						xmitBonus = 1
+						title = Atmospheric Pressure Scan from Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 50
+						subjectID = seismicScan@GillySrfLandedHighlands
+						xmit = 0.449999988
+						xmitBonus = 1
+						title = Seismic Scan from Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 30
+						subjectID = surfaceSample@GillySrfLandedHighlands
+						xmit = 0.25
+						xmitBonus = 1
+						title = Surface Sample from Gilly's Highlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 30
+						subjectID = surfaceSample@GillySrfLandedLowlands
+						xmit = 0.25
+						xmitBonus = 1
+						title = Surface Sample from Gilly's Lowlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 60
+						subjectID = gravityScan@GillySrfLandedLowlands
+						xmit = 0.400000006
+						xmitBonus = 1
+						title = Gravity Scan from Gilly's Lowlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 12
+						subjectID = barometerScan@GillySrfLandedLowlands
+						xmit = 0.5
+						xmitBonus = 1
+						title = Atmospheric Pressure Scan from Gilly's Lowlands
+						triggered = False
+						container = 2371018011
+					}
+					ScienceData
+					{
+						data = 50
+						subjectID = seismicScan@GillySrfLandedLowlands
+						xmit = 0.449999988
+						xmitBonus = 1
+						title = Seismic Scan from Gilly's Lowlands
+						triggered = False
+						container = 2371018011
+					}
 					UPGRADESAPPLIED
 					{
 					}
@@ -45242,6 +45859,7 @@ GAME
 						0 = Escape,Gilly
 						0 = Orbit,Gilly
 						0 = Suborbit,Gilly
+						0 = Land,Gilly
 					}
 					UPGRADESAPPLIED
 					{
@@ -45250,7 +45868,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 49.99985454529876
+					amount = 49.999854534997915
 					maxAmount = 50
 					flowState = True
 					isTweakable = True
@@ -45261,7 +45879,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 11.725457768617069
+					amount = 2.6979776220456615
 					maxAmount = 15
 					flowState = True
 					isTweakable = True
@@ -45295,8 +45913,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.5
 				shielded = False
-				temp = 206.06225671421069
-				tempExt = 206.15942526950784
+				temp = 209.83782433067947
+				tempExt = 209.66414540583602
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -45321,10 +45939,10 @@ GAME
 					isEnabled = True
 					staged = False
 					flameout = False
-					EngineIgnited = False
+					EngineIgnited = True
 					engineShutdown = False
 					currentThrottle = 0
-					thrustPercentage = 100
+					thrustPercentage = 11.5
 					manuallyOverridden = False
 					stagingEnabled = True
 					EVENTS
@@ -45488,8 +46106,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0337500013
 				shielded = False
-				temp = 206.06965707346006
-				tempExt = 206.14190949830822
+				temp = 209.08243048879513
+				tempExt = 209.79238091384912
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -45511,7 +46129,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 12.259671196005463
+					amount = 11.520666904863505
 					maxAmount = 24.300000000000001
 					flowState = True
 					isTweakable = True
@@ -45522,7 +46140,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 14.984041864098076
+					amount = 14.080814353642516
 					maxAmount = 29.699999999999999
 					flowState = True
 					isTweakable = True
@@ -45555,8 +46173,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0337500013
 				shielded = False
-				temp = 206.06989642932399
-				tempExt = 206.12946477772863
+				temp = 208.74637007408023
+				tempExt = 208.91627583421658
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -45578,7 +46196,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 12.259671196005463
+					amount = 11.520666904863505
 					maxAmount = 24.300000000000001
 					flowState = True
 					isTweakable = True
@@ -45589,7 +46207,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 14.984041864098076
+					amount = 14.080814353642516
 					maxAmount = 29.699999999999999
 					flowState = True
 					isTweakable = True
@@ -45622,8 +46240,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0337500013
 				shielded = False
-				temp = 206.06865854599874
-				tempExt = 206.11546852999894
+				temp = 208.7437076678242
+				tempExt = 208.88824144779318
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -45645,7 +46263,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 12.259671196005463
+					amount = 11.520666904863505
 					maxAmount = 24.300000000000001
 					flowState = True
 					isTweakable = True
@@ -45656,7 +46274,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 14.984041864098076
+					amount = 14.080814353642516
 					maxAmount = 29.699999999999999
 					flowState = True
 					isTweakable = True
@@ -45689,8 +46307,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0337500013
 				shielded = False
-				temp = 206.06865854446397
-				tempExt = 206.11546852939242
+				temp = 208.74581865237252
+				tempExt = 208.90998008827168
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -45712,7 +46330,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 12.259671196005463
+					amount = 11.520666904863505
 					maxAmount = 24.300000000000001
 					flowState = True
 					isTweakable = True
@@ -45723,7 +46341,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 14.984041864098076
+					amount = 14.080814353642516
 					maxAmount = 29.699999999999999
 					flowState = True
 					isTweakable = True
@@ -45758,8 +46376,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.08362483129366
-				tempExt = 206.22175651318739
+				temp = 211.40046768097082
+				tempExt = 213.00311760065338
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -45807,7 +46425,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1.39999998
 					damperTweakable = 1.39999998
-					suspensionPos = (6.25847321E-08, -0.1201092, -0.787822843)
+					suspensionPos = (0, -0.120109163, 2.78353691E-05)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -45825,10 +46443,10 @@ GAME
 					name = ModuleWheelDeployment
 					isEnabled = True
 					shieldedCanDeploy = False
-					stateDisplayString = Deployed
-					stateString = Deployed
+					stateDisplayString = Retracted
+					stateString = Retracted
 					stagingEnabled = True
-					position = 1
+					position = 0
 					EVENTS
 					{
 					}
@@ -45916,8 +46534,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.17140907469872
-				tempExt = 207.22474750959984
+				temp = 210.22269073974613
+				tempExt = 209.84627044050251
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -45965,7 +46583,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1.39999998
 					damperTweakable = 1.39999998
-					suspensionPos = (1.10268147E-07, -0.1201092, -0.787822843)
+					suspensionPos = (0, -0.120109163, 2.78353691E-05)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -45983,10 +46601,10 @@ GAME
 					name = ModuleWheelDeployment
 					isEnabled = True
 					shieldedCanDeploy = False
-					stateDisplayString = Deployed
-					stateString = Deployed
+					stateDisplayString = Retracted
+					stateString = Retracted
 					stagingEnabled = True
-					position = 1
+					position = 0
 					EVENTS
 					{
 					}
@@ -46074,8 +46692,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.17075558685943
-				tempExt = 207.10806566529314
+				temp = 208.75864657233154
+				tempExt = 209.03755581435553
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46123,7 +46741,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1.39999998
 					damperTweakable = 1.39999998
-					suspensionPos = (-8.94062424E-09, -0.120109141, -0.7878232)
+					suspensionPos = (0, -0.120109163, 2.78353691E-05)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -46141,10 +46759,10 @@ GAME
 					name = ModuleWheelDeployment
 					isEnabled = True
 					shieldedCanDeploy = False
-					stateDisplayString = Deployed
-					stateString = Deployed
+					stateDisplayString = Retracted
+					stateString = Retracted
 					stagingEnabled = True
-					position = 1
+					position = 0
 					EVENTS
 					{
 					}
@@ -46232,8 +46850,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.08152470286629
-				tempExt = 206.2034112901411
+				temp = 208.75761638306983
+				tempExt = 209.03775160030889
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46281,7 +46899,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1.39999998
 					damperTweakable = 1.39999998
-					suspensionPos = (2.05635487E-07, -0.1201092, -0.787822843)
+					suspensionPos = (0, -0.120109163, 2.78353691E-05)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -46299,10 +46917,10 @@ GAME
 					name = ModuleWheelDeployment
 					isEnabled = True
 					shieldedCanDeploy = False
-					stateDisplayString = Deployed
-					stateString = Deployed
+					stateDisplayString = Retracted
+					stateString = Retracted
 					stagingEnabled = True
-					position = 1
+					position = 0
 					EVENTS
 					{
 					}
@@ -46390,8 +47008,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0149999997
 				shielded = False
-				temp = 206.16853989732607
-				tempExt = 206.30091475761972
+				temp = 208.8743906185945
+				tempExt = 208.9689317340752
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46469,8 +47087,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0149999997
 				shielded = False
-				temp = 206.09447989022146
-				tempExt = 206.1438589798781
+				temp = 208.91382140461582
+				tempExt = 209.02613301952439
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46548,8 +47166,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0149999997
 				shielded = False
-				temp = 206.09447989022146
-				tempExt = 206.1438589798781
+				temp = 208.91223258239
+				tempExt = 209.02197596042572
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46627,8 +47245,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0149999997
 				shielded = False
-				temp = 206.10157135836155
-				tempExt = 206.22215114435102
+				temp = 209.04771216313929
+				tempExt = 209.03748218012115
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46703,8 +47321,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.08808420826011
-				tempExt = 206.1826495517102
+				temp = 208.76479623662948
+				tempExt = 208.98547598920189
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46793,8 +47411,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.10645230462222
-				tempExt = 206.30808783460563
+				temp = 208.8201722329942
+				tempExt = 208.94760288787984
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46883,8 +47501,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.09932945562386
-				tempExt = 206.27187723799045
+				temp = 208.79595405220303
+				tempExt = 208.94022695437889
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -46973,8 +47591,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.09037349738193
-				tempExt = 206.14665689841513
+				temp = 208.80126263656649
+				tempExt = 208.94184461652594
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -47064,8 +47682,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0299999993
 				shielded = False
-				temp = 206.06039205601172
-				tempExt = 206.1366563700048
+				temp = 208.73038278872647
+				tempExt = 208.91858728377198
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -47139,8 +47757,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0299999993
 				shielded = False
-				temp = 206.06039255608087
-				tempExt = 206.13665653182844
+				temp = 208.73038278870567
+				tempExt = 208.91858728376528
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -47214,8 +47832,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.06476466740773
-				tempExt = 206.13659200799333
+				temp = 208.73774124997317
+				tempExt = 208.91883998588062
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -47289,8 +47907,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.0500000007
 				shielded = False
-				temp = 206.06476466809883
-				tempExt = 206.13659200822053
+				temp = 208.73768346714948
+				tempExt = 208.9188209819502
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -47363,8 +47981,8 @@ GAME
 				srfN = srfAttach, 14
 				mass = 0.00499999989
 				shielded = False
-				temp = 206.2128555305145
-				tempExt = 206.69307191562686
+				temp = 209.05098633998642
+				tempExt = 209.07124486151258
 				tempExtUnexp = 304.90696586126677
 				expt = 0.5
 				state = 0
@@ -47465,10 +48083,10 @@ GAME
 			ACTIONGROUPS
 			{
 				Stage = False, 0
-				Gear = False, 0
+				Gear = False, 45876982.6257788
 				Light = False, 0
-				RCS = False, 45873574.7748952
-				SAS = True, 45873534.0148885
+				RCS = False, 45876793.2641131
+				SAS = True, 45876760.7641078
 				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
@@ -47492,12 +48110,27 @@ GAME
 			}
 			FLIGHTPLAN
 			{
+				MANEUVER
+				{
+					UT = 45878500.245220713
+					dV = 0.55170547165527672,7.9253061078321396,6.3448641886803951
+				}
+				MANEUVER
+				{
+					UT = 45956277.91401659
+					dV = 0,0,124.21798939534727
+				}
+			}
+			TARGET
+			{
+				type = Vessel
+				vesselID = a9f9c6b8-0603-4cd5-b351-355dc178b8f5
 			}
 			CTRLSTATE
 			{
-				pitch = 0
-				yaw = 0
-				roll = 1.62275171E-07
+				pitch = -1.00269735E-05
+				yaw = -2.94186293E-07
+				roll = 1.41959276E-07
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
@@ -47615,6 +48248,519 @@ GAME
 				FlightIntegrator
 				{
 				}
+			}
+		}
+		VESSEL
+		{
+			pid = 00000000000000000000000000000000
+			persistentId = 2649868279
+			name = Gilly Midlands
+			type = Flag
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 528.5000866279006
+			lct = 45874137.794987448
+			lastUT = 45874666.295074075
+			distanceTraveled = 22.619325723822179
+			root = 0
+			lat = 6.0949181481432726
+			lon = 159.75373997800875
+			alt = 3882.3380851352522
+			hgt = 0.322250158
+			nrm = -0.0083719492,0.86525327,-0.501265287
+			rot = -0.634156406,0.534548759,-0.273064703,-0.48737976
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 6
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 0
+				ECC = 1
+				INC = 6.0949181481432202
+				LPE = 270
+				LAN = 297.37961672810729
+				MNA = 0
+				EPH = 45875338.039298818
+				REF = 13
+			}
+			PART
+			{
+				name = flag
+				cid = 4294587584
+				uid = 1017656710
+				mid = 383754037
+				persistentId = 118399579
+				launchID = 31
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 4
+				tempExt = 4
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = flag(Clone)(Clone)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Valentina Kerman
+					PlaqueText = Valentina
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = edcae86f29724e0b9e56c1b8ea2ed45c
+			persistentId = 4219656464
+			name = Gilly Highlands
+			type = Flag
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = True
+			vesselSpawning = False
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 372.01803360879421
+			lct = 45875286.919290438
+			lastUT = 45875658.937324047
+			distanceTraveled = 23.932953231204074
+			root = 0
+			lat = -4.6957431693008322
+			lon = 157.63511028378474
+			alt = 4977.5772544170504
+			hgt = 0.376094192
+			nrm = 0.227980584,0.961563528,-0.15303725
+			rot = 0.438756227,-0.141535237,0.60112083,0.652774572
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 6
+			cPch = 0
+			cHdg = 0
+			cMod = 0
+			ORBIT
+			{
+				SMA = 9146.2336170219987
+				ECC = 0.96557162294204824
+				INC = 4.6957431693008473
+				LPE = 90
+				LAN = 119.34958335599134
+				MNA = 3.1415926535897913
+				EPH = 45875658.937324047
+				REF = 13
+			}
+			PART
+			{
+				name = flag
+				cid = 4294433774
+				uid = 533249812
+				mid = 383754037
+				persistentId = 69787441
+				launchID = 31
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 4
+				tempExt = 4
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = flag (Gilly Highlands)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Valentina Kerman
+					PlaqueText = Valentina
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 00000000000000000000000000000000
+			persistentId = 2551044612
+			name = Gilly Lowlands
+			type = Flag
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 400.48169738054276
+			lct = 45876597.984081112
+			lastUT = 45876998.465778492
+			distanceTraveled = 20.137694774736943
+			root = 0
+			lat = 17.799657668683839
+			lon = 160.97303059858905
+			alt = 2712.4113548374935
+			hgt = 0.421750724
+			nrm = 0.300083876,0.935762465,0.185197413
+			rot = -0.20660612,0.531789482,0.547126889,0.612507939
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 6
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 7939.4831962536764
+				ECC = 0.97902192956986767
+				INC = 17.799657668683828
+				LPE = 270
+				LAN = 319.75458006792411
+				MNA = -3.1415926535897913
+				EPH = 45876998.465778492
+				REF = 13
+			}
+			PART
+			{
+				name = flag
+				cid = 4294280688
+				uid = 2992894788
+				mid = 383754037
+				persistentId = 1568797677
+				launchID = 31
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = -1
+				sepI = 0
+				sidx = -1
+				attm = 0
+				srfN = , -1
+				mass = 0.00999999978
+				shielded = False
+				temp = 4
+				tempExt = 4
+				tempExtUnexp = 4
+				expt = 0.5
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = flag(Clone)(Clone)
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = FlagSite
+					isEnabled = True
+					placedBy = Valentina Kerman
+					PlaqueText = Valentina
+					stagingEnabled = True
+					state = Placed
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = FlagDecal
+					isEnabled = True
+					flagDisplayed = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = False, 0
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
 			}
 		}
 	}
@@ -48208,6 +49354,8 @@ GAME
 				10 = BoardVessel,Gilly
 				10 = Orbit,Gilly
 				10 = Suborbit,Gilly
+				10 = Land,Gilly
+				10 = PlantFlag,Gilly
 			}
 		}
 		KERBAL
@@ -49621,7 +50769,7 @@ GAME
 		MESSAGE
 		{
 			title = World First Milestones
-			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have initiated the first fly by of Eve.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have entered orbit of Eve.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have performed a spacewalk in orbit of Eve.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have initiated the first fly by of Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  50,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have escaped the gravitational influence of Eve.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,680 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have entered orbit of Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  48,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have performed a spacewalk in orbit of Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  30,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered into suborbital spaceflight above Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  50,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n
+			message = The recent accomplishments of our space program have attracted contributions from numerous organizations!~n~nWe have initiated the first fly by of Eve.~n<color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1> 44,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have entered orbit of Eve.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  42,240 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have performed a spacewalk in orbit of Eve.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  26,400 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have initiated the first fly by of Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  50,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have escaped the gravitational influence of Eve.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  31,680 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 3 </color>~n~n We have entered orbit of Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  48,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have performed a spacewalk in orbit of Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  30,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have entered into suborbital spaceflight above Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  50,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 4 </color>~n~n We have landed on the surface of Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  60,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 2 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 5 </color>~n~n We have walked on the surface of Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n~n We have planted a flag on Gilly.~n <color=#b4d455><sprite="CurrencySpriteAsset" name="Funds" tint=1>  24,000 </color><color=#6dcff6><sprite="CurrencySpriteAsset" name="Science" tint=1> 1 </color><color=#e0d503><sprite="CurrencySpriteAsset" name="Reputation" tint=1> 2 </color>~n
 			color = 3
 			icon = 6
 			read = False
