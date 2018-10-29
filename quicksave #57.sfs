@@ -207,44 +207,85 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 63952418.384656124
+		update = 62570048.259570658
 		version = 1.4.5
 		WEIGHTS
 		{
-			TourismContract = 45
+			TourismContract = 47
 			SurveyContract = 10
 			StationContract = 13
 			SentinelContract = 42
-			SatelliteContract = 13
+			SatelliteContract = 15
 			ISRUContract = 10
 			ExplorationContract = 30
-			BaseContract = 11
-			ARMContract = 28
+			BaseContract = 12
+			ARMContract = 29
 			RecoverAsset = 49
 			PlantFlag = 54
-			PartTest = 30
+			PartTest = 32
 			GrandTour = 30
-			CollectScience = 88
+			CollectScience = 90
 			Eeloo = 30
 			Dres = 30
-			Pol = 29
-			Gilly = 20
+			Pol = 30
+			Gilly = 22
 			Tylo = 30
-			Bop = 27
+			Bop = 29
 			Vall = 30
 			Laythe = 30
 			Jool = 26
-			Ike = 34
+			Ike = 36
 			Duna = 10
 			Eve = 11
 			Moho = 30
-			Minmus = 25
-			Mun = 45
-			Kerbin = 35
+			Minmus = 29
+			Mun = 49
+			Kerbin = 38
 			Sun = 10
 		}
 		CONTRACTS
 		{
+			CONTRACT
+			{
+				guid = f5e0795b-cffa-4043-8ede-eeae96972c36
+				type = ARMContract
+				prestige = 0
+				seed = 537996613
+				state = Offered
+				viewed = Seen
+				agent = Rokea Inc
+				deadlineType = Floating
+				expiryType = Floating
+				values = 58780.8390668928,58428154.0324915,49275.1968238831,134971.185170746,49748.9963588715,16,25.48313,13,62613903.5779464,0,0,0
+				targetBody = 1
+				asteroidClass = A
+				isLanding = False
+				PARAM
+				{
+					name = AsteroidParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					forStation = False
+					asteroidClass = A
+				}
+				PARAM
+				{
+					name = LocationAndSituationParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					targetBody = 1
+					targetSituation = ORBITING
+					noun = vessel
+					finalObjective = False
+				}
+				PARAM
+				{
+					name = StabilityParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					holdSeconds = 10
+				}
+			}
 			CONTRACT
 			{
 				guid = 3ef39ed6-e5fe-44da-8563-a6c765219e83
@@ -365,6 +406,29 @@ GAME
 			}
 			CONTRACT
 			{
+				guid = 717e3cd8-8cec-4276-8973-522a9937afc7
+				type = CollectScience
+				prestige = 0
+				seed = 1070242592
+				state = Offered
+				viewed = Read
+				agent = Sean's Cannery
+				deadlineType = Floating
+				expiryType = Floating
+				values = 104854.373931885,111669908.237457,26651.2492597103,68404.8699934483,27168.7487661839,3,6.666667,3,62612235.0421158,0,0,0
+				body = 3
+				location = Surface
+				PARAM
+				{
+					name = CollectScience
+					state = Incomplete
+					values = 0,0,0,0,0
+					body = 3
+					location = Surface
+				}
+			}
+			CONTRACT
+			{
 				guid = 82f48eed-4618-44d0-8d4d-df8ab6776bfc
 				type = ExplorationContract
 				prestige = 1
@@ -464,126 +528,25 @@ GAME
 			}
 			CONTRACT
 			{
-				guid = 9c863b5c-33d4-4436-ac3a-d8b8514e577c
-				type = RecoverAsset
-				prestige = 0
-				seed = -2077849364
-				state = Offered
-				viewed = Unseen
-				agent = Kerlington Model Rockets and Paper Products Inc
-				deadlineType = Floating
-				expiryType = Floating
-				values = 64800,46008000,23400,53460,23400,0,9,9,63956404.7432623,0,0,0
-				targetBody = 1
-				kerbalName = Carald Kerman
-				partName = MK1CrewCabin
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 1
-				PARAM
-				{
-					name = AcquireCrew
-					state = Incomplete
-					values = 5940,0,0,4,0
-					title = Save Carald Kerman
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverKerbal
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Carald Kerman on Kerbin
-					failOn = All
-					winOn = All
-				}
-			}
-			CONTRACT
-			{
-				guid = 3c24f5b9-8e81-4f53-b22d-f1280664e731
-				type = SurveyContract
-				prestige = 0
-				seed = -2077849363
-				state = Offered
-				viewed = Unseen
-				agent = Dinkelstein Kerman's Construction Emporium
-				deadlineType = Floating
-				expiryType = Floating
-				values = 108000,230040000,154499.995708466,286597.479023934,162224.988126755,0,8.118807,8.780488,63999604.7432623,0,0,0
-				targetBody = 7
-				centerLatitude = -33.818646832487659
-				centerLongitude = -82.286513663030476
-				dataName = observational
-				anomalyName = inconsistencies
-				reportName = reports
-				locationName = Ike^N
-				focusedSurvey = False
-				targetBand = HIGH
-				contextual = False
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 44000,0,3,3,0
-					targetBody = 7
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 12400
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1172203074
-					wpIndex = 0
-					wpTexture = report
-					wpLatitude = -31.216874172941807
-					wpLongitude = -85.771653971262253
-					wpLandlocked = False
-					wpNavigationId = 7eb809ad-0720-46d6-a7e2-7ac7348823cc
-				}
-				PARAM
-				{
-					name = SurveyWaypointParameter
-					state = Incomplete
-					values = 44000,0,3,3,0
-					targetBody = 7
-					actionDescription = Take a crew report
-					experiment = crewReport
-					flightThreshold = 11300
-					band = 3
-					clusterState = MIXED
-					verified = True
-					contextual = False
-					wpSeed = 1172203074
-					wpIndex = 1
-					wpTexture = report
-					wpLatitude = -35.389275745872624
-					wpLongitude = -82.3340784381368
-					wpLandlocked = False
-					wpNavigationId = 37c46754-0995-46a7-8c66-2f5ee216552c
-				}
-			}
-			CONTRACT
-			{
-				guid = adaf7ba2-3f97-43c4-bb51-44d2807fcd19
-				type = StationContract
+				guid = bb005ab3-eaf0-4f7b-8dc3-8396ff5fa3e6
+				type = BaseContract
 				prestige = 2
-				seed = -2077849352
+				seed = 567284518
 				state = Offered
-				viewed = Unseen
-				agent = Periapsis Rocket Supplies Co
+				viewed = Seen
+				agent = Experimental Engineering Group
 				deadlineType = Floating
 				expiryType = Floating
-				values = 129600,515289600,549120,1424280,549120,0,45,22,64021204.7432623,0,0,0
-				targetBody = 11
-				capacity = 10
+				values = 125825.248718262,500281188.903809,636292.782325745,1849667.73027452,710423.985271454,0,39.13044,30,62631733.9691206,0,0,0
+				targetBody = 14
+				capacity = 11
 				contextual = False
 				PARAM
 				{
 					name = VesselSystemsParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					typeString = station
+					typeString = outpost
 					mannedStatus = 2
 					requireNew = True
 					checkModuleTypes = Antenna|Generator|Dock
@@ -595,27 +558,27 @@ GAME
 					name = CrewCapacityParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					targetCapacity = 10
+					targetCapacity = 11
 				}
 				PARAM
 				{
 					name = ResourcePossessionParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					goalResource = 5000
-					resourceName = Ore
-					resourceTitle = ore
-					vesselName = station
+					goalResource = 6000
+					resourceName = LiquidFuel
+					resourceTitle = liquid fuel
+					vesselName = outpost
 				}
 				PARAM
 				{
-					name = PartRequestParameter
+					name = ResourcePossessionParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					article = a
-					partDescription = viewing cupola
-					vesselDescription = station
-					partNames = cupola
+					goalResource = 1500
+					resourceName = MonoPropellant
+					resourceTitle = monopropellant
+					vesselName = outpost
 				}
 				PARAM
 				{
@@ -629,90 +592,36 @@ GAME
 					name = LocationAndSituationParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					targetBody = 11
-					targetSituation = ORBITING
-					noun = station
+					targetBody = 14
+					targetSituation = LANDED
+					noun = outpost
 					finalObjective = False
 				}
 			}
 			CONTRACT
 			{
-				guid = a8a292b6-5cf3-4c48-84c2-69f5d4bfd303
+				guid = b50a77b0-a4ac-42ea-b69a-e38c06fb2b8a
 				type = TourismContract
 				prestige = 2
-				seed = -1205167029
+				seed = 1879177197
 				state = Offered
-				viewed = Unseen
-				agent = Rockomax Conglomerate
+				viewed = Read
+				agent = C7 Aerospace Division
 				deadlineType = Floating
 				expiryType = Floating
-				values = 47152.9965885601,200871765.467266,0,0,0,0,32.03191,15,63988214.8450998,0,0,0
+				values = 108000,276048000,0,0,0,0,30,15,62634454.8693155,0,0,0
 				preposition = of the solar system
 				homeDestinations = False
 				isGeeAdventure = False
-				tourists = Eilwin Kerman|Ribbart Kerman|Lupond Kerman|Berfield Kerman|Halkin Kerman
+				tourists = Kircan Kerman|Padorf Kerman|Svetlana Kerman|Nedzon Kerman|Aswise Kerman|Hanney Kerman
 				PARAM
 				{
 					name = KerbalTourParameter
 					state = Incomplete
 					allowPartialFailure = True
 					values = 219375,0,0,0,0
-					kerbalName = Eilwin Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Eilwin Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 2
-						targetType = Land
-						kerbalName = Eilwin Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Eilwin Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 219375,0,0,0,0
-					kerbalName = Ribbart Kerman
+					kerbalName = Kircan Kerman
 					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 2
-						targetType = Land
-						kerbalName = Ribbart Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Ribbart Kerman
-					}
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -720,7 +629,61 @@ GAME
 						values = 24375,0,0,0,0
 						targetBody = 1
 						targetType = Orbit
-						kerbalName = Ribbart Kerman
+						kerbalName = Kircan Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 7
+						targetType = Flyby
+						kerbalName = Kircan Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Kircan Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 109688,0,0,0,0
+					kerbalName = Padorf Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 3
+						targetType = Land
+						kerbalName = Padorf Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 2
+						targetType = Flyby
+						kerbalName = Padorf Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 12188,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Padorf Kerman
 					}
 				}
 				PARAM
@@ -729,8 +692,17 @@ GAME
 					state = Incomplete
 					allowPartialFailure = True
 					values = 292500,0,0,0,0
-					kerbalName = Lupond Kerman
-					kerbalGender = Male
+					kerbalName = Svetlana Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 7
+						targetType = Flyby
+						kerbalName = Svetlana Kerman
+					}
 					PARAM
 					{
 						name = KerbalDestinationParameter
@@ -738,195 +710,7 @@ GAME
 						values = 24375,0,0,0,0
 						targetBody = 1
 						targetType = Suborbit
-						kerbalName = Lupond Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Lupond Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Lupond Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 2
-						targetType = Flyby
-						kerbalName = Lupond Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 263250,0,0,0,0
-					kerbalName = Berfield Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 29250,0,0,0,0
-						targetBody = 13
-						targetType = Land
-						kerbalName = Berfield Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 29250,0,0,0,0
-						targetBody = 2
-						targetType = Land
-						kerbalName = Berfield Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 29250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Berfield Kerman
-					}
-				}
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 351000,0,0,0,0
-					kerbalName = Halkin Kerman
-					kerbalGender = Male
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 29250,0,0,0,0
-						targetBody = 13
-						targetType = Orbit
-						kerbalName = Halkin Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 29250,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Halkin Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 29250,0,0,0,0
-						targetBody = 1
-						targetType = Orbit
-						kerbalName = Halkin Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 29250,0,0,0,0
-						targetBody = 1
-						targetType = Suborbit
-						kerbalName = Halkin Kerman
-					}
-				}
-			}
-			CONTRACT
-			{
-				guid = a7413669-b720-48b2-b698-afb687728a33
-				type = RecoverAsset
-				prestige = 2
-				seed = -1205167028
-				state = Offered
-				viewed = Unseen
-				agent = Jebediah Kerman's Junkyard and Spacecraft Parts Co
-				deadlineType = Floating
-				expiryType = Floating
-				values = 73220.3407287598,194949157.190323,157258.065640926,413165.316970069,224249.995350838,0,19.20525,15.09434,64014282.18924,0,0,0
-				targetBody = 6
-				kerbalName = Jebediah Kerman
-				partName = mk3FuselageLFO.25
-				partID = 0
-				recoveryLocation = 1
-				recoveryType = 2
-				PARAM
-				{
-					name = AcquirePart
-					state = Incomplete
-					values = 49500,0,0,7,0
-					title = Obtain Module 4-MJM
-					winOn = 0
-				}
-				PARAM
-				{
-					name = RecoverPart
-					state = Incomplete
-					values = 0,0,0,0,0
-					title = Recover Module 4-MJM on Kerbin
-					failOn = AnyCandidate
-					winOn = AllCandidates
-				}
-			}
-			CONTRACT
-			{
-				guid = a685593f-7f3d-4258-8624-f95025e8d563
-				type = TourismContract
-				prestige = 2
-				seed = -1205167022
-				state = Offered
-				viewed = Unseen
-				agent = Kerbodyne
-				deadlineType = Floating
-				expiryType = Floating
-				values = 86400,230040000,0,0,0,0,30,15,64027461.8485113,0,0,0
-				preposition = of the solar system
-				homeDestinations = False
-				isGeeAdventure = False
-				tourists = Rovey Kerman|Kathemone Kerman|Sigbles Kerman
-				PARAM
-				{
-					name = KerbalTourParameter
-					state = Incomplete
-					allowPartialFailure = True
-					values = 219375,0,0,0,0
-					kerbalName = Rovey Kerman
-					kerbalGender = Female
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 6
-						targetType = Flyby
-						kerbalName = Rovey Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Rovey Kerman
+						kerbalName = Svetlana Kerman
 					}
 					PARAM
 					{
@@ -935,7 +719,16 @@ GAME
 						values = 24375,0,0,0,0
 						targetBody = 3
 						targetType = Land
-						kerbalName = Rovey Kerman
+						kerbalName = Svetlana Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Svetlana Kerman
 					}
 				}
 				PARAM
@@ -943,44 +736,44 @@ GAME
 					name = KerbalTourParameter
 					state = Incomplete
 					allowPartialFailure = True
-					values = 292500,0,0,0,0
-					kerbalName = Kathemone Kerman
-					kerbalGender = Female
+					values = 351000,0,0,0,0
+					kerbalName = Nedzon Kerman
+					kerbalGender = Male
 					PARAM
 					{
 						name = KerbalDestinationParameter
 						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 2
-						targetType = Orbit
-						kerbalName = Kathemone Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 2
-						targetType = Flyby
-						kerbalName = Kathemone Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Kathemone Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
+						values = 29250,0,0,0,0
 						targetBody = 6
-						targetType = Orbit
-						kerbalName = Kathemone Kerman
+						targetType = Flight
+						kerbalName = Nedzon Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 29250,0,0,0,0
+						targetBody = 13
+						targetType = Land
+						kerbalName = Nedzon Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 29250,0,0,0,0
+						targetBody = 6
+						targetType = Flyby
+						kerbalName = Nedzon Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 29250,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Nedzon Kerman
 					}
 				}
 				PARAM
@@ -988,79 +781,156 @@ GAME
 					name = KerbalTourParameter
 					state = Incomplete
 					allowPartialFailure = True
-					values = 292500,0,0,0,0
-					kerbalName = Sigbles Kerman
+					values = 234000,0,0,0,0
+					kerbalName = Aswise Kerman
 					kerbalGender = Female
 					PARAM
 					{
 						name = KerbalDestinationParameter
 						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 7
-						targetType = Flyby
-						kerbalName = Sigbles Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 0
-						targetType = Flyby
-						kerbalName = Sigbles Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 5
-						targetType = Flyby
-						kerbalName = Sigbles Kerman
-					}
-					PARAM
-					{
-						name = KerbalDestinationParameter
-						state = Incomplete
-						values = 24375,0,0,0,0
-						targetBody = 5
+						values = 19500,0,0,0,0
+						targetBody = 1
 						targetType = Orbit
-						kerbalName = Sigbles Kerman
+						kerbalName = Aswise Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Aswise Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 0
+						targetType = Orbit
+						kerbalName = Aswise Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 3
+						targetType = Flyby
+						kerbalName = Aswise Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 263250,0,0,0,0
+					kerbalName = Hanney Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 29250,0,0,0,0
+						targetBody = 3
+						targetType = Land
+						kerbalName = Hanney Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 29250,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Hanney Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 29250,0,0,0,0
+						targetBody = 13
+						targetType = Orbit
+						kerbalName = Hanney Kerman
 					}
 				}
 			}
 			CONTRACT
 			{
-				guid = 6408c24d-2c87-456b-8f53-5752de44027b
-				type = ARMContract
+				guid = 6c7617f3-4ccd-4b49-8394-a5589d4754a5
+				type = SatelliteContract
 				prestige = 2
-				seed = -1205167020
+				seed = 567284517
 				state = Offered
-				viewed = Unseen
-				agent = Integrated Integrals
+				viewed = Read
+				agent = Kerbal Motion LLC
 				deadlineType = Floating
 				expiryType = Floating
-				values = 62912.6243591309,375210891.677856,703995.296193928,2111985.84479599,833174.982726574,42,63.6,34,64003974.4728704,0,0,0
-				targetBody = 8
-				asteroidClass = D
-				isLanding = False
+				values = 108000,368064000,243432,623796,243432,16,18,9,62613908.7204024,0,0,0
+				targetBody = 11
+				deviation = 3
+				orbitType = 6
+				placementMode = 0
 				PARAM
 				{
-					name = AsteroidParameter
+					name = VesselSystemsParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					forStation = False
-					asteroidClass = D
+					typeString = probe
+					mannedStatus = 1
+					requireNew = True
+					checkModuleTypes = Antenna|Generator
+					checkModuleDescriptions = has an antenna|can generate power
+					launchID = 0
 				}
 				PARAM
 				{
-					name = LocationAndSituationParameter
+					name = SpecificOrbitParameter
 					state = Incomplete
 					values = 0,0,0,0,0
-					targetBody = 8
-					targetSituation = ORBITING
-					noun = vessel
-					finalObjective = False
+					TargetBody = 11
+					deviationWindow = 3
+					orbitType = 6
+					inclination = 176.02124739657202
+					eccentricity = 0.023187341673870748
+					sma = 255567.78128452261
+					lan = 228.31433956898482
+					argumentOfPeriapsis = 143.48076275711915
+					meanAnomalyAtEpoch = 2.2321414869202858
+					epoch = 0
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = mystery goo unit
+					vesselDescription = satellite
+					partNames = GooExperiment
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = resource survey scanner
+					vesselDescription = satellite
+					partNames = SurveyScanner
+				}
+				PARAM
+				{
+					name = PartRequestParameter
+					state = Incomplete
+					values = 0,0,0,0,0
+					article = a
+					partDescription = gravioli detector
+					vesselDescription = satellite
+					partNames = sensorGravimeter
 				}
 				PARAM
 				{
@@ -1068,6 +938,243 @@ GAME
 					state = Incomplete
 					values = 0,0,0,0,0
 					holdSeconds = 10
+				}
+			}
+			CONTRACT
+			{
+				guid = f1f7ed17-c527-4427-b465-4604cf7eaa1a
+				type = PartTest
+				prestige = 2
+				seed = 537996614
+				state = Offered
+				viewed = Read
+				agent = Periapsis Rocket Supplies Co
+				deadlineType = Floating
+				expiryType = Floating
+				values = 21600,18403200,43200,108000,43200,8,15,10,62576722.7388795,0,0,0
+				part = sepMotor1
+				haul = False
+				dest = 2
+				sit = ORBITING
+				exp = False
+				PARAM
+				{
+					name = PartTest
+					state = Incomplete
+					values = 0,0,0,0,0
+					part = sepMotor1
+					body = Mun
+					situation = ORBITING
+					uniqueID = 0.63125937182049241
+					haul = False
+					repeatability = ONCEPERPART
+					notes = To perform the test, activate the part through the staging sequence when all test conditions are met.
+					PARAM
+					{
+						name = ReachDestination
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						dest = 2
+						title = 
+					}
+					PARAM
+					{
+						name = ReachSituation
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						sit = ORBITING
+						title = 
+					}
+					PARAM
+					{
+						name = ReachAltitudeEnvelope
+						state = Incomplete
+						disableOnStateChange = False
+						values = 0,0,0,0,0
+						minAlt = 270000
+						maxAlt = 280000
+					}
+				}
+			}
+			CONTRACT
+			{
+				guid = 13ad8850-d48a-4e4d-ae19-5ab32b39602a
+				type = TourismContract
+				prestige = 2
+				seed = -504760452
+				state = Offered
+				viewed = Unseen
+				agent = Sean's Cannery
+				deadlineType = Floating
+				expiryType = Floating
+				values = 118899.080371857,211045867.660046,0,0,0,0,26.08696,15,62688907.3224732,0,0,0
+				preposition = of the solar system
+				homeDestinations = False
+				isGeeAdventure = False
+				tourists = Raydard Kerman|Bobcott Kerman|Samgee Kerman|Namy Kerman
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 292500,0,0,0,0
+					kerbalName = Raydard Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Raydard Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 2
+						targetType = Flyby
+						kerbalName = Raydard Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 7
+						targetType = Flyby
+						kerbalName = Raydard Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 2
+						targetType = Land
+						kerbalName = Raydard Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 234000,0,0,0,0
+					kerbalName = Bobcott Kerman
+					kerbalGender = Male
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 1
+						targetType = Suborbit
+						kerbalName = Bobcott Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 0
+						targetType = Flyby
+						kerbalName = Bobcott Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Bobcott Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 19500,0,0,0,0
+						targetBody = 1
+						targetType = Orbit
+						kerbalName = Bobcott Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 219375,0,0,0,0
+					kerbalName = Samgee Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 7
+						targetType = Flyby
+						kerbalName = Samgee Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Samgee Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 3
+						targetType = Land
+						kerbalName = Samgee Kerman
+					}
+				}
+				PARAM
+				{
+					name = KerbalTourParameter
+					state = Incomplete
+					allowPartialFailure = True
+					values = 219375,0,0,0,0
+					kerbalName = Namy Kerman
+					kerbalGender = Female
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 3
+						targetType = Orbit
+						kerbalName = Namy Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 7
+						targetType = Flyby
+						kerbalName = Namy Kerman
+					}
+					PARAM
+					{
+						name = KerbalDestinationParameter
+						state = Incomplete
+						values = 24375,0,0,0,0
+						targetBody = 3
+						targetType = Land
+						kerbalName = Namy Kerman
+					}
 				}
 			}
 			CONTRACT_FINISHED
@@ -4873,7 +4980,7 @@ GAME
 	{
 		name = Funding
 		scene = 7, 8, 5, 6
-		funds = 4622904.1920138411
+		funds = 4622504.1920138411
 	}
 	SCENARIO
 	{
@@ -7747,7 +7854,7 @@ GAME
 		Science
 		{
 			id = recovery@MunOrbited
-			title = Recovery of a vessel returned from orbit around The Mun
+			title = Recovery of a vessel returned from orbit around Mun
 			dsc = 1
 			scv = 0.00462959195
 			sbv = 16
@@ -10217,7 +10324,7 @@ GAME
 	{
 		name = ScenarioDiscoverableObjects
 		scene = 7, 8, 5
-		lastSeed = 1277721295
+		lastSeed = 548480982
 		sizeCurve
 		{
 			key = 0 0 1.5 1.5
@@ -10275,12 +10382,12 @@ GAME
 	{
 		name = SentinelScenario
 		scene = 7, 8, 5
-		NextSpawnTime = 63964315.451367192
+		NextSpawnTime = 62582571.973992884
 	}
 	FLIGHTSTATE
 	{
 		version = 1.4.5
-		UT = 63952419.904656373
+		UT = 62570049.839570917
 		activeVessel = 0
 		mapViewFiltering = 124
 		commNetUIModeTracking = Network
@@ -12074,11 +12181,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 33.139536126716237
+				INC = 33.139536126716386
 				LPE = 270
-				LAN = 105.2646471953218
+				LAN = 309.89338170722999
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -12244,13 +12351,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = NaN
-				ECC = 1
-				INC = 7.1629107601798898
-				LPE = 90.000000000000014
-				LAN = 114.00815234806356
-				MNA = 0
-				EPH = 63952418.304656111
+				SMA = 30000.164244099084
+				ECC = 0.99999999999999989
+				INC = 7.1629107601799431
+				LPE = 90
+				LAN = 318.636886859968
+				MNA = 3.1415926207170166
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -12418,11 +12525,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 15.25268793939548
+				INC = 15.252687939395095
 				LPE = 270
-				LAN = 83.031040241221717
+				LAN = 287.65977475312729
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -13996,13 +14103,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
-				INC = 14.86361510809599
-				LPE = 90.000000000000014
-				LAN = 133.53215736020348
+				INC = 14.863615108095939
+				LPE = 90
+				LAN = 130.44372779579692
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -14168,13 +14275,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 102563.78306601819
-				ECC = 0.99999999999999989
-				INC = 75.873950869081582
+				SMA = NaN
+				ECC = 1
+				INC = 75.873950869081511
 				LPE = 270
-				LAN = 113.49971742419268
-				MNA = 3.1415926207170166
-				EPH = 63952418.304656111
+				LAN = 110.41128785978776
+				MNA = 0
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -14340,13 +14447,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
+				SMA = 100640.4166669204
+				ECC = 0.99999999999999989
 				INC = 6.5528164443285437
 				LPE = 270
-				LAN = 351.1965231805562
-				MNA = 0
-				EPH = 63952418.304656111
+				LAN = 348.10809361615003
+				MNA = 3.1415926207170166
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -14512,13 +14619,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
-				INC = 20.381392075003301
+				SMA = 100234.03165149876
+				ECC = 0.99999999999999989
+				INC = 20.38139207500334
 				LPE = 90
-				LAN = 323.40415515514957
-				MNA = 0
-				EPH = 63952418.304656111
+				LAN = 320.3157255907434
+				MNA = 3.1415926207170166
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -14686,11 +14793,11 @@ GAME
 			{
 				SMA = 0
 				ECC = 1
-				INC = 8.7018021343068099
+				INC = 8.7018021343068934
 				LPE = 90
-				LAN = 273.65234310256807
+				LAN = 270.56391353816167
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -14858,11 +14965,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 45.026387409088649
+				INC = 45.026387409088443
 				LPE = 270
-				LAN = 252.11268500196155
+				LAN = 249.02425543755487
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -15028,13 +15135,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 100890.83446671303
+				SMA = 100890.83446671306
 				ECC = 0.99999999999999989
 				INC = 7.9632979298839492
 				LPE = 270
-				LAN = 216.78601825253506
-				MNA = 3.1415926207170166
-				EPH = 63952418.304656111
+				LAN = 213.69758868812855
+				MNA = -3.1415926207170166
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -15200,13 +15307,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = NaN
+				SMA = 0
 				ECC = 1
-				INC = 37.738916480563056
+				INC = 37.738916480563205
 				LPE = 90
-				LAN = 195.76426861280146
+				LAN = 192.67583904839492
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -18700,11 +18807,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 25.241418606463647
+				INC = 25.241418606463469
 				LPE = 270
-				LAN = 15.591355348928516
+				LAN = 220.22008986083367
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -18870,13 +18977,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 30000.160284867718
+				SMA = 30000.160284867536
 				ECC = 0.99999999999999989
-				INC = 9.4489634906235818
+				INC = 9.4489634906236599
 				LPE = 270
-				LAN = 312.29210913907337
+				LAN = 156.92084365098231
 				MNA = 3.1415926207170166
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -19044,11 +19151,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 80.605673188193308
+				INC = 80.605673188193691
 				LPE = 270
-				LAN = 331.32829405960302
+				LAN = 175.95702857151025
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -19216,11 +19323,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 71.105698187628008
+				INC = 71.105698187624554
 				LPE = 90
-				LAN = 201.26917037942937
+				LAN = 45.897904891341227
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -19386,13 +19493,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
-				INC = 3.4448042703072219
-				LPE = 90.000000000000014
-				LAN = 38.864605423056332
+				INC = 3.4448042703077513
+				LPE = 90
+				LAN = 243.49333993495998
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -19560,11 +19667,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 2.4260502468752505
+				INC = 2.4260502468754006
 				LPE = 270
-				LAN = 43.297490701058791
+				LAN = 247.92622521296363
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -23477,10 +23584,10 @@ GAME
 				SMA = 299998.93741315271
 				ECC = 0.99999999999999989
 				INC = 10.281539418763277
-				LPE = 90
-				LAN = 158.80006651926396
-				MNA = -3.1415926207170166
-				EPH = 63952418.304656111
+				LPE = 89.999999999999986
+				LAN = 320.45403774987511
+				MNA = 3.1415926207170166
+				EPH = 62561382.195973568
 				REF = 1
 			}
 			PART
@@ -24610,13 +24717,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.166331201057
-				ECC = 0.99999999999999989
+				SMA = NaN
+				ECC = 1
 				INC = 1.8970841384012982
 				LPE = 270
-				LAN = 126.85144864957942
-				MNA = 3.1415926207170166
-				EPH = 63952418.304656111
+				LAN = 331.48018316148136
+				MNA = 0
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -26198,11 +26305,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 38.833719970089099
+				INC = 38.83371997031108
 				LPE = 90
-				LAN = 213.76258244980247
+				LAN = 130.45732335318917
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 6
 			}
 			PART
@@ -30723,13 +30830,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 30000.171122670388
-				ECC = 0.99999999999999989
-				INC = 0.38526182723141988
+				SMA = NaN
+				ECC = 1
+				INC = 0.38526182723236591
 				LPE = 270
-				LAN = 35.477078291561497
-				MNA = -3.1415926207170166
-				EPH = 63952418.304656111
+				LAN = 240.10581280346577
+				MNA = 0
+				EPH = 62561382.195973568
 				REF = 3
 			}
 			PART
@@ -36554,13 +36661,13 @@ GAME
 			cMod = -1
 			ORBIT
 			{
-				SMA = 8441.1690417975333
-				ECC = 0.99999999999999989
-				INC = 6.0949181486664834
+				SMA = NaN
+				ECC = 1
+				INC = 6.0949181482261974
 				LPE = 270
-				LAN = 219.40741813072529
-				MNA = -3.1415926207170166
-				EPH = 63952418.304656111
+				LAN = 136.06644747835207
+				MNA = 0
+				EPH = 62561382.195973568
 				REF = 13
 			}
 			PART
@@ -36726,13 +36833,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
-				ECC = 1
-				INC = 4.6957431694067564
-				LPE = 89.999999999999986
-				LAN = 217.28878843582996
-				MNA = 0
-				EPH = 63952418.304656111
+				SMA = 8988.7886271393581
+				ECC = 0.99999999999999978
+				INC = 4.6957431693310738
+				LPE = 90.000000000000014
+				LAN = 133.94781778436402
+				MNA = -3.1415926303452304
+				EPH = 62561382.195973568
 				REF = 13
 			}
 			PART
@@ -36900,11 +37007,11 @@ GAME
 			{
 				SMA = NaN
 				ECC = 1
-				INC = 17.799657669717313
+				INC = 17.799657669565281
 				LPE = 270
-				LAN = 220.62670875061639
+				LAN = 137.28573810229159
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 13
 			}
 			PART
@@ -37070,13 +37177,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101126.21423529838
-				ECC = 0.99999999999999989
-				INC = 5.7581375162759461
+				SMA = NaN
+				ECC = 1
+				INC = 5.758137516275692
 				LPE = 270
-				LAN = 135.95575903570892
-				MNA = 3.1415926207170166
-				EPH = 63952418.304656111
+				LAN = 132.86732947130793
+				MNA = 0
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -42067,13 +42174,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 101121.63998530866
-				ECC = 0.99999999999999989
-				INC = 5.826980675951333
+				SMA = 0
+				ECC = 1
+				INC = 5.8269806759512068
 				LPE = 270
-				LAN = 135.69862517043748
-				MNA = 3.1415926207170166
-				EPH = 63952418.304656111
+				LAN = 132.61019560603074
+				MNA = 0
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -45047,13 +45154,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
-				INC = 5.755913241948404
+				INC = 5.755913241948341
 				LPE = 270
-				LAN = 135.95260759928033
+				LAN = 132.86417803487421
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -48739,13 +48846,13 @@ GAME
 			cMod = 0
 			ORBIT
 			{
-				SMA = 0
+				SMA = NaN
 				ECC = 1
 				INC = 15.50389781866518
 				LPE = 270
-				LAN = 139.26155091044495
+				LAN = 136.1731213460389
 				MNA = 0
-				EPH = 63952418.304656111
+				EPH = 62561382.195973568
 				REF = 2
 			}
 			PART
@@ -55362,6 +55469,1134 @@ GAME
 		}
 		VESSEL
 		{
+			pid = f4e12a7df18f4dada5b14320a5f45338
+			persistentId = 1456463218
+			name = Ast. EVG-008
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 62117318.330773771
+			lct = 62117318.330773771
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.2491388546793839
+			lon = 165.52304977093411
+			alt = 13861083804.770563
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.565836251,0.124124274,-0.504732907,0.640052617
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14363434760.874186
+				ECC = 0.05483951123432191
+				INC = 0.28421483355349242
+				LPE = 13.988281374844847
+				LAN = 151.18807769336189
+				MNA = -0.23863403934986505
+				EPH = 63658431.825646818
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 547683041
+				mid = 547683041
+				persistentId = 2639512104
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 62117318.330773771
+				lifetime = 1555409.1247558594
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = bbf384c249c9488cb722353af8a849ce
+			persistentId = 601973214
+			name = Ast. KJP-740
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 62207318.330773771
+			lct = 62207318.330773771
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 1.1639234091885025
+			lon = 97.29434088670321
+			alt = 14161789891.931826
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.334707081,-0.324802577,0.676689386,0.569706857
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14076245632.451786
+				ECC = 0.037409851363867937
+				INC = 1.5209064766347007
+				LPE = 182.76920851264597
+				LAN = 46.800764888746073
+				MNA = 0.031061765275653686
+				EPH = 65744911.262902677
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 758565244
+				mid = 758565244
+				persistentId = 963758999
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 62207318.330773771
+				lifetime = 471122.80883789063
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = db562951c73a4614a68b4aee86d7b8a4
+			persistentId = 1431069497
+			name = Ast. HYC-797
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 62211718.330773771
+			lct = 62211718.330773771
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -1.1816841686413353
+			lon = 101.63286139088734
+			alt = 15401486777.565001
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.608858764,-0.390450776,-0.617588103,0.308907956
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 14769618035.73987
+				ECC = 0.080667456904413251
+				INC = 2.494521081771063
+				LPE = 349.83785356007195
+				LAN = 256.47106568837353
+				MNA = 0.15166597213349403
+				EPH = 66384416.389855802
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 434006800
+				mid = 434006800
+				persistentId = 2306211696
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 62211718.330773771
+				lifetime = 1163808.8470458984
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = f3376c7915544b55a1cccade24c21f4a
+			persistentId = 3327040955
+			name = Ast. VRI-701
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 62217118.330773771
+			lct = 62217118.330773771
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.71560834546223373
+			lon = 110.61811506484189
+			alt = 16792735951.139429
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.441042721,0.724334538,0.0996554792,0.52047056
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 15414129646.767118
+				ECC = 0.11919765027144635
+				INC = 2.5447312638693407
+				LPE = 352.48514410150898
+				LAN = 281.894353190674
+				MNA = 0.079951249788054762
+				EPH = 66989941.487512052
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 1174367875
+				mid = 1174367875
+				persistentId = 4282053007
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 62217118.330773771
+				lifetime = 954364.14184570313
+				refTime = 1728000
+				size = 3
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 49b99c4a1f2546d792cf9529dabffec2
+			persistentId = 2713033487
+			name = Viator 17 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = LaunchPad
+			displaylandedAt = LaunchPad
+			splashed = False
+			met = 46.560007631778717
+			lct = 62358421.542565636
+			lastUT = 62358468.102573268
+			distanceTraveled = 0
+			root = 0
+			lat = -0.097178618878392284
+			lon = -74.557558328332149
+			alt = 79.452380112139508
+			hgt = 6.99422836
+			nrm = 6.97076321E-05,0.99999994,0.000457108021
+			rot = -0.0972688273,-0.700621128,0.700825334,-0.0922644436
+			CoM = 0,0,0
+			stg = 5
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 10
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 0
+				ECC = 1
+				INC = 0.097178618879780548
+				LPE = 90
+				LAN = 342.25695976526498
+				MNA = 0
+				EPH = 62561382.195973568
+				REF = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				cid = 4294591560
+				uid = 3481448783
+				mid = 156944280
+				persistentId = 4020465913
+				launchID = 35
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.0000006
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 5
+				resPri = 0
+				dstg = 6
+				sqor = 5
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.100000001
+				shielded = False
+				temp = 307.77333252533316
+				tempExt = 308.14126298217383
+				tempExtUnexp = 308.14065955781024
+				expt = 0.100000001
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = launchClamp1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 2.95774817
+					height = 7.4630084
+					stagingEnabled = True
+					towerRot = 4.26325608E-14,1,4.60589092E-07,1.19209275E-07
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 62358421.1225656
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 1fc520b1daf64c00b2ff5766f2861718
+			persistentId = 2598316253
+			name = Viator 17 Debris
+			type = Debris
+			sit = LANDED
+			landed = True
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = LaunchPad
+			landedAt = LaunchPad
+			displaylandedAt = LaunchPad
+			splashed = False
+			met = 46.560007631778717
+			lct = 62358421.542565636
+			lastUT = 62358468.102573268
+			distanceTraveled = 0
+			root = 0
+			lat = -0.09757055971636884
+			lon = -74.557561061728478
+			alt = 79.45426525734365
+			hgt = 6.99610281
+			nrm = -6.96182251E-05,0.99999994,-0.000455200672
+			rot = 0.700825989,0.0922642127,0.0972689763,-0.700620413
+			CoM = 0,0,0
+			stg = 5
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 2
+			PQSMax = 10
+			cPch = 0
+			cHdg = 0
+			cMod = -1
+			ORBIT
+			{
+				SMA = 0
+				ECC = 1
+				INC = 0.097570559714261096
+				LPE = 90
+				LAN = 342.25695703186869
+				MNA = 0
+				EPH = 62561382.195973568
+				REF = 1
+			}
+			PART
+			{
+				name = launchClamp1
+				cid = 4294601464
+				uid = 3680982
+				mid = 156944280
+				persistentId = 453628451
+				launchID = 35
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1.0000006
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 5
+				resPri = 0
+				dstg = 6
+				sqor = 5
+				sepI = 5
+				sidx = 0
+				attm = 1
+				srfN = srfAttach, -1
+				mass = 0.100000001
+				shielded = False
+				temp = 307.6018638765247
+				tempExt = 307.9836349330082
+				tempExtUnexp = 307.98300931274412
+				expt = 0.100000001
+				state = 1
+				attached = False
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = Squad/Agencies/KerbinWorldFirstRecordKeepingSociety
+				rTrf = launchClamp1
+				modCost = 0
+				EVENTS
+				{
+				}
+				ACTIONS
+				{
+				}
+				PARTDATA
+				{
+				}
+				MODULE
+				{
+					name = LaunchClamp
+					isEnabled = True
+					scaleFactor = 2.95774746
+					height = 7.4630084
+					stagingEnabled = True
+					towerRot = -4.60589092E-07,1.19209275E-07,4.26325608E-14,-1
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ReleaseClamp
+						{
+							actionGroup = None
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleGenerator
+					isEnabled = True
+					generatorIsActive = True
+					throttle = 1
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+						ToggleAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ActivateAction
+						{
+							actionGroup = None
+							active = False
+						}
+						ShutdownAction
+						{
+							actionGroup = None
+							active = False
+						}
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+				MODULE
+				{
+					name = ModuleTestSubject
+					isEnabled = True
+					stagingEnabled = True
+					EVENTS
+					{
+					}
+					ACTIONS
+					{
+					}
+					UPGRADESAPPLIED
+					{
+					}
+				}
+			}
+			ACTIONGROUPS
+			{
+				Stage = False, 0
+				Gear = False, 0
+				Light = False, 0
+				RCS = False, 0
+				SAS = True, 62358421.1225656
+				Brakes = False, 0
+				Abort = False, 0
+				Custom01 = False, 0
+				Custom02 = False, 0
+				Custom03 = False, 0
+				Custom04 = False, 0
+				Custom05 = False, 0
+				Custom06 = False, 0
+				Custom07 = False, 0
+				Custom08 = False, 0
+				Custom09 = False, 0
+				Custom10 = False, 0
+			}
+			DISCOVERY
+			{
+				state = -1
+				lastObservedTime = 0
+				lifetime = Infinity
+				refTime = Infinity
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+				pitch = 0
+				yaw = 0
+				roll = 0
+				trimPitch = 0
+				trimYaw = 0
+				trimRoll = 0
+				mainThrottle = 0
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 4417018177714c6d9bf0a0743de2fb78
+			persistentId = 4131609810
+			name = Ast. JDZ-369
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 62377396.940924861
+			lct = 62377396.940924861
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = -0.57012110372026303
+			lon = -40.729356835025854
+			alt = 14594974047.669334
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.626830578,-0.130148396,0.349858701,0.68391794
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 15362899341.098738
+				ECC = 0.11469293899933947
+				INC = 0.57060360790421238
+				LPE = 352.07122374495316
+				LAN = 188.07826917016504
+				MNA = 0.028856751899906254
+				EPH = 64484868.229987361
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 219595964
+				mid = 219595964
+				persistentId = 1205179280
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 62377396.940924861
+				lifetime = 667389.64691162109
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = b34d7eb5caab459ba199d055eb2bf177
+			persistentId = 2172522405
+			name = Ast. CYZ-208
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 62400504.939082436
+			lct = 62400504.939082436
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 0.094205551978804827
+			lon = -26.585580232664373
+			alt = 16960910010.700275
+			hgt = -1
+			nrm = 0,1,0
+			rot = -0.262018532,0.72245878,0.36794728,0.523463905
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 15408426850.655468
+				ECC = 0.11936232429176312
+				INC = 0.16546173056693431
+				LPE = 316.8849568372126
+				LAN = 348.54000397441217
+				MNA = -0.16283425886572878
+				EPH = 67335552.216914475
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 279617980
+				mid = 279617980
+				persistentId = 2457134416
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 62400504.939082436
+				lifetime = 241800.78735351563
+				refTime = 1728000
+				size = 2
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
+			pid = 8a9e598643114393893d816604c670d8
+			persistentId = 3998282870
+			name = Ast. IWW-649
+			type = SpaceObject
+			sit = ORBITING
+			landed = False
+			skipGroundPositioning = False
+			vesselSpawning = True
+			launchedFrom = 
+			landedAt = 
+			displaylandedAt = 
+			splashed = False
+			met = 62437278.033605471
+			lct = 62437278.033605471
+			lastUT = -1
+			distanceTraveled = 0
+			root = 0
+			lat = 0.2431541267198517
+			lon = -83.047427231867402
+			alt = 16282291492.680481
+			hgt = -1
+			nrm = 0,1,0
+			rot = 0.0105970968,-0.374447584,-0.661322534,0.649868608
+			CoM = 0,0,0
+			stg = 0
+			prst = False
+			ref = 0
+			ctrl = False
+			PQSMin = 0
+			PQSMax = 0
+			ORBIT
+			{
+				SMA = 16841029843.756216
+				ECC = 0.19531362978682001
+				INC = 0.25623859495189838
+				LPE = 167.74557835748064
+				LAN = 36.406752642469314
+				MNA = -0.038847038759873553
+				EPH = 64954291.070714846
+				REF = 0
+			}
+			PART
+			{
+				name = PotatoRoid
+				cid = 0
+				uid = 548480982
+				mid = 548480982
+				persistentId = 2245986074
+				launchID = 0
+				parent = 0
+				position = 0,0,0
+				rotation = 0,0,0,1
+				mirror = 1,1,1
+				symMethod = Radial
+				istg = 0
+				resPri = 0
+				dstg = 0
+				sqor = 0
+				sepI = 0
+				sidx = 0
+				attm = 0
+				srfN = None, -1
+				mass = 150
+				shielded = False
+				temp = -1
+				tempExt = 0
+				tempExtUnexp = 0
+				expt = 0.100000001
+				state = 0
+				attached = True
+				autostrutMode = Off
+				rigidAttachment = False
+				flag = 
+				rTrf = 
+				modCost = 0
+			}
+			ACTIONGROUPS
+			{
+			}
+			DISCOVERY
+			{
+				state = 1
+				lastObservedTime = 62437278.033605471
+				lifetime = 169191.66069030762
+				refTime = 1728000
+				size = 4
+			}
+			FLIGHTPLAN
+			{
+			}
+			CTRLSTATE
+			{
+			}
+			VESSELMODULES
+			{
+				FlightIntegrator
+				{
+				}
+			}
+		}
+		VESSEL
+		{
 			pid = 463273ccd6ce4286bb006d0d88daaa95
 			persistentId = 2427375358
 			name = Ast. NOI-841
@@ -60012,720 +61247,6 @@ GAME
 				}
 			}
 		}
-		VESSEL
-		{
-			pid = dee9c4d0f5b24a3cb54e6974ccc73016
-			persistentId = 3345067795
-			name = Ast. NHN-523
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 62751703.492607966
-			lct = 62751703.492607966
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = 0.40753028997643154
-			lon = 26.789202634020672
-			alt = 13932533431.19198
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.458384246,0.37835139,0.284613073,0.75214988
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 13925419247.163191
-				ECC = 0.020141993017391904
-				INC = 0.46358041901942781
-				LPE = 225.20285765144047
-				LAN = 58.342827933057038
-				MNA = -0.31544989744784063
-				EPH = 66590928.480400935
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 2081345610
-				mid = 2081345610
-				persistentId = 917522709
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 62751703.492607966
-				lifetime = 1264087.2161865234
-				refTime = 1728000
-				size = 0
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 155bd2b490d84a06bc5d0e06f8a49d45
-			persistentId = 4084558995
-			name = Ast. TKX-343
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 63275703.492607966
-			lct = 63275703.492607966
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = 1.7255501912144975
-			lon = -34.56806937372609
-			alt = 13972539252.230125
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.627811968,-0.743790805,0.0704725236,0.218313903
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 14275147449.610947
-				ECC = 0.049337295095149981
-				INC = 1.802405717837674
-				LPE = 162.69979847984442
-				LAN = 61.982143321505987
-				MNA = 0.27051910244698651
-				EPH = 66006851.545586482
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1736792546
-				mid = 1736792546
-				persistentId = 843757889
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 63275703.492607966
-				lifetime = 921219.18640136719
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 9cb277c5e1844227848805eae789f719
-			persistentId = 478756971
-			name = Ast. RXY-444
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 63359703.492607966
-			lct = 63359703.492607966
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = -1.7999740533191915
-			lon = -102.86341020785966
-			alt = 13714350530.068686
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.508606732,-0.776572585,-0.371675253,0.0105658695
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 14716540235.074072
-				ECC = 0.0770913688447281
-				INC = 2.0453420569472884
-				LPE = 351.03346635114713
-				LAN = 198.52599693919652
-				MNA = 0.13783349261307556
-				EPH = 64907951.454033747
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1719109239
-				mid = 1719109239
-				persistentId = 719962489
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 63359703.492607966
-				lifetime = 1097491.1682128906
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 8ca4d3ec436b475fb07830e87c633967
-			persistentId = 2903578682
-			name = Ast. BVM-271
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 63507703.492607966
-			lct = 63507703.492607966
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = 0.65247771444897307
-			lon = 152.76355610927968
-			alt = 15653139406.231888
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.669929385,-0.385649532,-0.434445381,0.462305546
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 14944454615.081041
-				ECC = 0.09894056147952511
-				INC = 0.66322854401364995
-				LPE = 214.83270216703426
-				LAN = 76.18061054378137
-				MNA = -0.304132575241162
-				EPH = 66726742.567314997
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1627476957
-				mid = 1627476957
-				persistentId = 625158908
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 63507703.492607966
-				lifetime = 596893.09844970703
-				refTime = 1728000
-				size = 3
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = b9ce78e745624f8984a3d6332f3b7cd3
-			persistentId = 2416747051
-			name = Ast. QZH-135
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 63727703.492607966
-			lct = 63727703.492607966
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = 0.52082246429306434
-			lon = -32.743680345271812
-			alt = 13592708976.972162
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.741573513,-0.17865631,0.116977707,0.635977089
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 13805106673.051044
-				ECC = 0.016867564170692937
-				INC = 0.52112978735016047
-				LPE = 191.17357006556307
-				LAN = 65.643763024048781
-				MNA = -0.45995858634625569
-				EPH = 65686068.995537654
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 218561427
-				mid = 218561427
-				persistentId = 1124329817
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 63727703.492607966
-				lifetime = 378084.62219238281
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = b2dbfbcd4cd34e0291e649d6816bdbf4
-			persistentId = 143381446
-			name = Ast. VDN-493
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 63926233.825073786
-			lct = 63926233.825073786
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = -0.5978161785498316
-			lon = -170.06262563058419
-			alt = 15798785147.736332
-			hgt = -1
-			nrm = 0,1,0
-			rot = 0.80261302,0.305908561,0.321085095,0.398919135
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 14863382806.493526
-				ECC = 0.083090903179292394
-				INC = 2.2674166903666464
-				LPE = 2.1675890154117581
-				LAN = 346.51944390975166
-				MNA = -0.0098444406614976443
-				EPH = 68716994.57946831
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1114407968
-				mid = 1114407968
-				persistentId = 2208261987
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 63926233.825073786
-				lifetime = 446090.625
-				refTime = 1728000
-				size = 2
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
-		VESSEL
-		{
-			pid = 2c974e6399d64613b53dce11311f54f6
-			persistentId = 4135183966
-			name = Ast. HPI-963
-			type = SpaceObject
-			sit = ORBITING
-			landed = False
-			skipGroundPositioning = False
-			vesselSpawning = True
-			launchedFrom = 
-			landedAt = 
-			displaylandedAt = 
-			splashed = False
-			met = 63931633.825073786
-			lct = 63931633.825073786
-			lastUT = -1
-			distanceTraveled = 0
-			root = 0
-			lat = 0.38263653694114524
-			lon = 172.28545133145803
-			alt = 14747590610.934561
-			hgt = -1
-			nrm = 0,1,0
-			rot = -0.250868648,0.692967534,0.321629047,0.594487727
-			CoM = 0,0,0
-			stg = 0
-			prst = False
-			ref = 0
-			ctrl = False
-			PQSMin = 0
-			PQSMax = 0
-			ORBIT
-			{
-				SMA = 14379595901.694391
-				ECC = 0.055384743924869993
-				INC = 0.99184393507137547
-				LPE = 166.83243553579371
-				LAN = 145.95665033190573
-				MNA = 0.25201623551074409
-				EPH = 68232466.527710497
-				REF = 0
-			}
-			PART
-			{
-				name = PotatoRoid
-				cid = 0
-				uid = 1277721295
-				mid = 1277721295
-				persistentId = 2929948327
-				launchID = 0
-				parent = 0
-				position = 0,0,0
-				rotation = 0,0,0,1
-				mirror = 1,1,1
-				symMethod = Radial
-				istg = 0
-				resPri = 0
-				dstg = 0
-				sqor = 0
-				sepI = 0
-				sidx = 0
-				attm = 0
-				srfN = None, -1
-				mass = 150
-				shielded = False
-				temp = -1
-				tempExt = 0
-				tempExtUnexp = 0
-				expt = 0.100000001
-				state = 0
-				attached = True
-				autostrutMode = Off
-				rigidAttachment = False
-				flag = 
-				rTrf = 
-				modCost = 0
-			}
-			ACTIONGROUPS
-			{
-			}
-			DISCOVERY
-			{
-				state = 1
-				lastObservedTime = 63931633.825073786
-				lifetime = 432758.55102539063
-				refTime = 1728000
-				size = 4
-			}
-			FLIGHTPLAN
-			{
-			}
-			CTRLSTATE
-			{
-			}
-			VESSELMODULES
-			{
-				FlightIntegrator
-				{
-				}
-			}
-		}
 	}
 	LoaderInfo
 	{
@@ -62438,70 +62959,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Carald Kerman
-			gender = Female
-			type = Unowned
-			trait = Engineer
-			brave = 0.975953996
-			dumb = 0.559558392
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Eilwin Kerman
-			gender = Female
-			type = Unowned
-			trait = Tourist
-			brave = 0.704690099
-			dumb = 0.63960284
-			badS = False
-			veteran = False
-			tour = False
-			state = Assigned
-			inactive = False
-			inactiveTimeEnd = 0
-			gExperienced = 0
-			outDueToG = False
-			ToD = 0
-			idx = -1
-			extraXP = 0
-			hero = False
-			CAREER_LOG
-			{
-				flight = 0
-			}
-			FLIGHT_LOG
-			{
-				flight = 0
-			}
-		}
-		KERBAL
-		{
-			name = Ribbart Kerman
+			name = Kircan Kerman
 			gender = Male
 			type = Unowned
 			trait = Tourist
-			brave = 0.216516316
-			dumb = 0.809646249
+			brave = 0.905237257
+			dumb = 0.8105039
 			badS = False
 			veteran = False
 			tour = False
@@ -62525,13 +62988,71 @@ GAME
 		}
 		KERBAL
 		{
-			name = Lupond Kerman
+			name = Padorf Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.794519007
+			dumb = 0.890776634
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Svetlana Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.310753971
+			dumb = 0.461209804
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Nedzon Kerman
 			gender = Male
 			type = Unowned
 			trait = Tourist
-			brave = 0.407364577
-			dumb = 0.615737677
-			badS = False
+			brave = 0.27927953
+			dumb = 0.862542391
+			badS = True
 			veteran = False
 			tour = False
 			state = Assigned
@@ -62554,12 +63075,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Berfield Kerman
+			name = Aswise Kerman
 			gender = Female
 			type = Unowned
 			trait = Tourist
-			brave = 0.437569976
-			dumb = 0.825581908
+			brave = 0.91028291
+			dumb = 0.271794736
 			badS = False
 			veteran = False
 			tour = False
@@ -62583,12 +63104,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Halkin Kerman
+			name = Hanney Kerman
 			gender = Male
 			type = Unowned
 			trait = Tourist
-			brave = 0.312958986
-			dumb = 0.63149631
+			brave = 0.496257216
+			dumb = 0.936743975
 			badS = False
 			veteran = False
 			tour = False
@@ -62612,12 +63133,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Rovey Kerman
-			gender = Female
+			name = Raydard Kerman
+			gender = Male
 			type = Unowned
 			trait = Tourist
-			brave = 0.906078637
-			dumb = 0.531136572
+			brave = 0.869395971
+			dumb = 0.869136751
 			badS = False
 			veteran = False
 			tour = False
@@ -62641,12 +63162,12 @@ GAME
 		}
 		KERBAL
 		{
-			name = Kathemone Kerman
-			gender = Female
+			name = Bobcott Kerman
+			gender = Male
 			type = Unowned
 			trait = Tourist
-			brave = 0.246946394
-			dumb = 0.262634069
+			brave = 0.0201228242
+			dumb = 0.600259721
 			badS = False
 			veteran = False
 			tour = False
@@ -62670,12 +63191,41 @@ GAME
 		}
 		KERBAL
 		{
-			name = Sigbles Kerman
+			name = Samgee Kerman
 			gender = Female
 			type = Unowned
 			trait = Tourist
-			brave = 0.760560393
-			dumb = 0.621445119
+			brave = 0.29967922
+			dumb = 0.269949168
+			badS = False
+			veteran = False
+			tour = False
+			state = Assigned
+			inactive = False
+			inactiveTimeEnd = 0
+			gExperienced = 0
+			outDueToG = False
+			ToD = 0
+			idx = -1
+			extraXP = 0
+			hero = False
+			CAREER_LOG
+			{
+				flight = 0
+			}
+			FLIGHT_LOG
+			{
+				flight = 0
+			}
+		}
+		KERBAL
+		{
+			name = Namy Kerman
+			gender = Female
+			type = Unowned
+			trait = Tourist
+			brave = 0.320473731
+			dumb = 0.101711564
 			badS = False
 			veteran = False
 			tour = False
