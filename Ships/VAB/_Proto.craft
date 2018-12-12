@@ -2,7 +2,7 @@ ship = _Proto
 version = 1.4.5
 description = 
 type = VAB
-size = 10.0038099,13.656826,2.94675255
+size = 10.0038109,13.8047161,2.94675279
 steamPublishedFileId = 0
 persistentId = 595456978
 rot = 0,0,0,0
@@ -13,11 +13,11 @@ PART
 	part = mk2Cockpit.Standard_4294382288
 	partName = Part
 	persistentId = 298507349
-	pos = 0.125683472,11.5021362,-0.161447987
+	pos = 1.20226955,12.7297163,-0.245695949
 	attPos = 0,0,0
-	attPos0 = 0.125683472,11.5021362,-0.161447987
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
+	attPos0 = 1.20226955,12.7297163,-0.245695949
+	rot = 0,0,0,-1
+	attRot = 0,0,0,-0.999999881
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
@@ -275,10 +275,10 @@ PART
 	part = SmallGearBay_4294209520
 	partName = Part
 	persistentId = 1891525601
-	pos = 0.125683472,12.9935951,0.363466561
+	pos = 1.20226955,14.2211752,0.279218614
 	attPos = 0,0,0
 	attPos0 = 0,1.49145889,0.524914563
-	rot = -0.749758542,0,0,0.661711514
+	rot = 0.749758542,0,0,-0.661711514
 	attRot = 0,0,0,1
 	attRot0 = -0.749758542,0,0,0.661711514
 	mir = 1,1,1
@@ -556,10 +556,10 @@ PART
 	part = mk2FuselageLongLFO_4294040804
 	partName = Part
 	persistentId = 410914505
-	pos = 0.125683472,8.37713623,-0.161447987
+	pos = 1.20226955,9.6047163,-0.245695949
 	attPos = 0,0,0
 	attPos0 = 0,-3.125,0
-	rot = 0,0,0,1
+	rot = 0,0,0,-1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -577,7 +577,6 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = mk2FuselageShortLFO_4294301738
-	link = launchClamp1_4294032672
 	attN = top,mk2Cockpit.Standard_4294382288_0|1.875|0
 	attN = bottom,mk2FuselageShortLFO_4294301738_0|-1.875|0
 	EVENTS
@@ -632,10 +631,10 @@ PART
 	part = mk2FuselageShortLFO_4294301738
 	partName = Part
 	persistentId = 922764782
-	pos = 0.125683472,5.56463623,-0.161447987
+	pos = 1.20226955,6.7922163,-0.245695949
 	attPos = 0,0,0
 	attPos0 = 0,-2.8125,0
-	rot = 0,0,0,1
+	rot = 0,0,0,-1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -709,10 +708,10 @@ PART
 	part = mk2SpacePlaneAdapter_4294294186
 	partName = Part
 	persistentId = 3396539036
-	pos = 0.125683472,3.68963623,-0.161447987
+	pos = 1.20226955,4.9172163,-0.245695949
 	attPos = 0,0,0
 	attPos0 = 0,-1.875,0
-	rot = 1,0,0,0
+	rot = -1,0,0,0
 	attRot = 0.99999994,0,0,0
 	attRot0 = 1,0,0,0
 	mir = 1,1,1
@@ -729,11 +728,11 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = SSME_4294329266
 	link = CanardController_4294245522
 	link = CanardController_4294238734
 	link = CanardController_4294230464
-	attN = top,SSME_4294329266_0|0.9375|0
+	link = liquidEngine_4294624712
+	attN = top,liquidEngine_4294624712_0|0.9375|0
 	attN = bottom,mk2FuselageShortLFO_4294301738_0|-0.9375|0
 	EVENTS
 	{
@@ -784,212 +783,13 @@ PART
 }
 PART
 {
-	part = SSME_4294329266
-	partName = Part
-	persistentId = 4070339430
-	pos = 0.125683472,2.75213623,-0.161447987
-	attPos = 0,0,0
-	attPos0 = 0,0.9375,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = -1,0,0,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 0
-	sepI = -1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = top,mk2SpacePlaneAdapter_4294294186_0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = True
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-			}
-			ActivateAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAlternator
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleJettison
-		isEnabled = True
-		activejettisonName = Fairing
-		isJettisoned = True
-		shroudHideOverride = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			JettisonAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGimbal
-		isEnabled = True
-		gimbalLock = False
-		gimbalLimiter = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		gimbalActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-			LockAction
-			{
-				actionGroup = None
-			}
-			FreeAction
-			{
-				actionGroup = None
-			}
-			TogglePitchAction
-			{
-				actionGroup = None
-			}
-			ToggleYawAction
-			{
-				actionGroup = None
-			}
-			ToggleRollAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleAnimateThrottle
-		isEnabled = True
-		animState = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSurfaceFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = CanardController_4294245522
 	partName = Part
 	persistentId = 380413430
-	pos = -0.607860029,3.10185909,-0.161448032
+	pos = 0.468726039,4.32943916,-0.245695993
 	attPos = 0,0,0
 	attPos0 = -0.733543515,0.587777138,4.37226042E-08
-	rot = 0,-4.21468478E-08,-0.173646748,-0.984808028
+	rot = 0,4.21468478E-08,0.173646748,0.984808028
 	attRot = 0.99999994,0,0,0
 	attRot0 = 0.984808028,-0.173646748,4.21468478E-08,0
 	mir = 1,1,1
@@ -1059,10 +859,10 @@ PART
 	part = CanardController_4294238734
 	partName = Part
 	persistentId = 1069061188
-	pos = 0.859227002,3.10185909,-0.161447883
+	pos = 1.93581307,4.32943916,-0.245695844
 	attPos = 0,0,0
 	attPos0 = 0.733543515,0.587777138,-1.07851015E-07
-	rot = 0.173646748,0.984808028,7.5903408E-09,9.00478303E-10
+	rot = -0.173646748,-0.984808028,-7.5903408E-09,-9.00478303E-10
 	attRot = 0.99999994,0,0,0
 	attRot0 = -9.00478303E-10,7.5903408E-09,-0.984808028,0.173646748
 	mir = 1,1,1
@@ -1132,10 +932,10 @@ PART
 	part = CanardController_4294230464
 	partName = Part
 	persistentId = 1694553603
-	pos = 0.125683472,3.10610771,-0.789952755
+	pos = 1.20226955,4.33368778,-0.874200702
 	attPos = 0,0,0
 	attPos0 = 0,0.583528519,0.628504753
-	rot = 0.0237742085,0.706707001,-0.0237742085,-0.706707001
+	rot = -0.0237742085,-0.706707001,0.0237742085,0.706707001
 	attRot = 0.999999881,0,0,0
 	attRot0 = 0.706707001,-0.0237742085,-0.706707001,0.0237742085
 	mir = 1,1,1
@@ -1204,10 +1004,10 @@ PART
 	part = deltaWing_4294309504
 	partName = Part
 	persistentId = 491067436
-	pos = -1.12660217,6.36753273,-0.161447912
+	pos = -0.0500160456,7.5951128,-0.245695874
 	attPos = 0,0,0
 	attPos0 = -1.2522856,0.8028965,7.46420454E-08
-	rot = 0,0,-3.4968059E-07,1
+	rot = 0,0,3.4968059E-07,-1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,-3.4968059E-07,1
 	mir = 1,1,1
@@ -1257,10 +1057,10 @@ PART
 	part = SmallGearBay_4294176392
 	partName = Part
 	persistentId = 858663495
-	pos = -1.77075136,5.65568161,-0.067697607
+	pos = -0.69416523,6.88326168,-0.151945561
 	attPos = 0,0,0
 	attPos0 = -0.644148707,-0.711851597,0.0937503055
-	rot = 0.707106888,-4.07419549E-07,8.71033876E-08,-0.70710665
+	rot = -0.707106888,4.07419549E-07,-8.71033876E-08,0.70710665
 	attRot = 0,0,0,-0.999999881
 	attRot0 = 0.707106888,-1.60157981E-07,-1.60158095E-07,-0.70710665
 	mir = 1,1,1
@@ -1538,10 +1338,10 @@ PART
 	part = deltaWing_4294227366
 	partName = Part
 	persistentId = 3510721266
-	pos = 1.37796903,6.36753273,-0.161448166
+	pos = 2.45455503,7.5951128,-0.245696127
 	attPos = 0,0,0
 	attPos0 = 1.2522856,0.8028965,-1.84120324E-07
-	rot = -3.4968059E-07,1,1.52850246E-14,-4.37113883E-08
+	rot = 3.4968059E-07,-1,-1.52850246E-14,4.37113883E-08
 	attRot = 0,0,0,1
 	attRot0 = -3.4968059E-07,1,1.52850246E-14,-4.37113883E-08
 	mir = 1,1,1
@@ -1591,10 +1391,10 @@ PART
 	part = SmallGearBay_4294189080
 	partName = Part
 	persistentId = 3124919966
-	pos = 2.00416636,5.70152569,-0.0677001253
+	pos = 3.08075237,6.92910576,-0.151948094
 	attPos = 0,0,0
 	attPos0 = -0.626196742,-0.666007459,-0.0937481001
-	rot = 0.707106829,6.60291875E-08,-4.28493877E-07,-0.707106829
+	rot = -0.707106829,-6.60291875E-08,4.28493877E-07,0.707106829
 	attRot = 0,0,0,-0.999999881
 	attRot0 = 1.503237E-07,0.707106829,0.707106829,-1.50323729E-07
 	mir = 1,1,1
@@ -1869,15 +1669,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4294032672
+	part = liquidEngine_4294624712
 	partName = Part
-	persistentId = 253320082
-	pos = 0.125683472,6.5661726,1.37693667
+	persistentId = 639398574
+	pos = 1.20226955,3.0778904,-0.245695949
 	attPos = 0,0,0
-	attPos0 = 0,-1.81096363,1.53838468
-	rot = 0,1,-1.78813934E-07,0
+	attPos0 = 0,1.8393259,0
+	rot = 0,0,0,-1
 	attRot = 0,0,0,1
-	attRot0 = 0,1,-1.78813934E-07,0
+	attRot0 = -1,0,0,0
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1885,14 +1685,14 @@ PART
 	istg = 0
 	resPri = 0
 	dstg = 0
-	sidx = 1
+	sidx = 0
 	sqor = 0
-	sepI = 0
-	attm = 1
+	sepI = -1
+	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	srfN = srfAttach,mk2FuselageLongLFO_4294040804
+	attN = top,mk2SpacePlaneAdapter_4294294186_0|0.9018263|0
 	EVENTS
 	{
 	}
@@ -1904,52 +1704,32 @@ PART
 	}
 	MODULE
 	{
-		name = LaunchClamp
+		name = ModuleEngines
 		isEnabled = True
-		scaleFactor = 2.86395502
-		height = 7.22632408
-		stagingEnabled = True
-		towerRot = 0,-1,1.78813934E-07,0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ReleaseClamp
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGenerator
-		isEnabled = True
-		generatorIsActive = False
-		throttle = 0
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			ToggleAction
+			OnAction
 			{
 				actionGroup = None
-				active = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				active = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
-				active = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
 			}
 		}
 		UPGRADESAPPLIED
@@ -1958,7 +1738,60 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTestSubject
+		name = ModuleJettison
+		isEnabled = True
+		activejettisonName = fairing
+		isJettisoned = True
+		shroudHideOverride = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			JettisonAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleAnimateThrottle
+		isEnabled = True
+		animState = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAlternator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleSurfaceFX
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
